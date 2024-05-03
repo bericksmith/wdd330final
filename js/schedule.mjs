@@ -1,31 +1,44 @@
 import { apiOptions } from './config.mjs';
 
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/schedule?year=2022&month=10&day=05';
+function generateUrl() {
+    const today = new Date(); 
+    const year = today.getFullYear();
+    const month = today.getMonth() + 1; 
+    const day = today.getDate();
+
+    return `https://major-league-baseball-mlb.p.rapidapi.com/schedule?year=${year}&month=${month}&day=${day}`;
+}
 
 export async function fetchSchedule() {
+    const url = generateUrl();
     try {
         const response = await fetch(url, apiOptions);
         const data = await response.json();
         const display = document.getElementById('scheduleContent');
-        display.innerHTML = formatScheduleData(data);
+        display.innerHTML = formatScheduleData(data, url);
     } catch (error) {
         console.error('Failed to fetch schedule:', error);
         document.getElementById('scheduleContent').textContent = 'Failed to load schedule.';
     }
 }
 
-function formatScheduleData(data) {
-    console.log("Data received:", data);  // Log to see the full structure of the received data
-    // First, ensure that the data for the specific date and games exists
-    if (!data['20221005'] || !data['20221005'].games) {
-        console.error('No games data available for the specific date');
+function formatScheduleData(data, url) {
+    console.log("Data received:", data);
+    const dateKey = url.match(/year=(\d+)&month=(\d+)&day=(\d+)/);
+    if (!dateKey) {
+        console.error('Invalid date format in URL');
+        return 'Invalid date format.';
+    }
+
+    const date = `${dateKey[1]}${dateKey[2].padStart(2, '0')}${dateKey[3].padStart(2, '0')}`;
+    if (!data[date] || !data[date].games) {
+        console.error('No games data available for the specific date:', date);
         return 'No games scheduled for this date.';
     }
 
-    let games = data['20221005'].games;
+    let games = data[date].games;
 
     let formattedHtml = games.map(game => {
-        // Check for existence of competitions and venue data before accessing
         if (!game.competitions || !game.competitions[0].venue) {
             return '<p>Competition or venue data missing.</p>';
         }
