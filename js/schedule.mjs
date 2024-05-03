@@ -1,6 +1,6 @@
 import { apiOptions } from './config.mjs';
 
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/schedule?year=2024&month=05&day=03';
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/schedule?year=2022&month=10&day=05';
 
 export async function fetchSchedule() {
     try {
@@ -15,8 +15,20 @@ export async function fetchSchedule() {
 }
 
 function formatScheduleData(data) {
-    let games = data['20240503'].games;
+    console.log("Data received:", data);  // Log to see the full structure of the received data
+    // First, ensure that the data for the specific date and games exists
+    if (!data['20221005'] || !data['20221005'].games) {
+        console.error('No games data available for the specific date');
+        return 'No games scheduled for this date.';
+    }
+
+    let games = data['20221005'].games;
+
     let formattedHtml = games.map(game => {
+        // Check for existence of competitions and venue data before accessing
+        if (!game.competitions || !game.competitions[0].venue) {
+            return '<p>Competition or venue data missing.</p>';
+        }
         let venueInfo = game.competitions[0].venue;
         let gameDetails = `
             <h3>${game.name}</h3>
@@ -24,9 +36,13 @@ function formatScheduleData(data) {
             <p>Venue: ${venueInfo.fullName}, ${venueInfo.address.city}, ${venueInfo.address.state}</p>
             <p>Leaders and Stats:</p>
             <ul>
-                ${game.competitions[0].leaders.map(leader => `
-                    <li>${leader.displayName}: ${leader.leaders.map(l => `${l.athlete.displayName} - ${l.displayValue}`).join(', ')}</li>
-                `).join('')}
+                ${
+                    game.competitions[0].leaders && game.competitions[0].leaders.length > 0 ?
+                    game.competitions[0].leaders.map(leader => `
+                        <li>${leader.displayName}: ${leader.leaders.map(l => `${l.athlete.displayName} - ${l.displayValue}`).join(', ')}</li>
+                    `).join('') :
+                    '<li>No leader data available.</li>'
+                }
             </ul>
         `;
         return gameDetails;
@@ -34,6 +50,7 @@ function formatScheduleData(data) {
 
     return formattedHtml;
 }
+
 
 
 
