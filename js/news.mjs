@@ -25,9 +25,8 @@ function formatNewsItem(item) {
         <div class="news-item">
             <h2>${item.headline}</h2>
             <p>${item.description}</p>
-            <a href="${item.link}" target="_blank">Read more</a>
+            <a href="${item.link}" target="_blank">Read more on ESPN.com</a>
             <p><strong>Published:</strong> ${new Date(item.published || '').toLocaleString()}</p>
-            <p><strong>Last Modified:</strong> ${new Date(item.lastModified || '').toLocaleString()}</p>
         </div>
     `;
 }
