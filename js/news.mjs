@@ -6,6 +6,7 @@ async function fetchNews() {
     try {
         const response = await fetch(url, apiOptions);
         const data = await response.json();
+        console.log(data);
         const display = document.getElementById('newsContent');
         display.innerHTML = formatNews(data);
     } catch (error) {
@@ -15,6 +16,8 @@ async function fetchNews() {
 }
 
 function formatNews(data) {
+    const categories = Array.isArray(data.categories) ? data.categories : [];
+
     const htmlContent = `
         <h2>${data.headline}</h2>
         <p>${data.description}</p>
@@ -24,12 +27,13 @@ function formatNews(data) {
         <div>
             <h3>Categories:</h3>
             <ul>
-                ${data.categories.map(cat => `<li>${cat.description} (${cat.type})</li>`).join('')}
+                ${categories.map(cat => `<li>${cat.description} (${cat.type})</li>`).join('')}
             </ul>
         </div>
     `;
     return htmlContent;
 }
+
 
 fetchNews();
 fetchNews();
