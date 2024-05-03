@@ -1,6 +1,6 @@
 import { apiOptions } from './config.mjs';
 
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=2020&month=10&day=05';
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=2024&month=05&day=03';
 
 async function fetchScoreboard() {
     try {

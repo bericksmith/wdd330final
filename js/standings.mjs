@@ -1,6 +1,6 @@
 import { apiOptions } from './config.mjs';
 
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/standings?year=2023';
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/standings?year=2024';
 
 async function fetchStandings() {
     try {
