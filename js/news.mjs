@@ -32,4 +32,6 @@ function formatNewsItem(item) {
     `;
 }
 
+export { fetchNews };
+
 fetchNews();
