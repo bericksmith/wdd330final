@@ -5,13 +5,12 @@ const url = 'https://major-league-baseball-mlb.p.rapidapi.com/news';
 async function fetchNews() {
     try {
         const response = await fetch(url, apiOptions);
-        const data = await response.json(); // Assuming data is an array of news items
-        console.log(data);  // Log the full data for debugging
-        const display = document.getElementById('newsContent');
+        const data = await response.json();
+        console.log('Data received:', data);
 
-        // Check if data is actually an array and loop through it
+        const display = document.getElementById('newsContent');
         if (Array.isArray(data)) {
-            display.innerHTML = data.map(newsItem => formatNewsItem(newsItem)).join('');
+            display.innerHTML = data.map(item => formatNewsItem(item)).join('');
         } else {
             display.textContent = 'No news items found.';
         }
@@ -21,7 +20,6 @@ async function fetchNews() {
     }
 }
 
-
 function formatNewsItem(item) {
     const categories = Array.isArray(item.categories) ? item.categories : [];
     return `
@@ -29,8 +27,9 @@ function formatNewsItem(item) {
             <h2>${item.headline}</h2>
             <p>${item.description}</p>
             <a href="${item.link}" target="_blank">Read more</a>
-            <p><strong>Published:</strong> ${new Date(item.published).toLocaleString()}</p>
-            <p><strong>Last Modified:</strong> ${new Date(item.lastModified).toLocaleString()}</p>
+            <p><strong>Published:</strong> ${new Date(item.published || '').toLocaleString()}</p>
+            <p><strong>Last Modified:</strong> ${new Date(item.lastModified || '').toLocaleString()}</p>
+
             <div>
                 <h3>Categories:</h3>
                 <ul>
