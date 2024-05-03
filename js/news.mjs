@@ -2,7 +2,7 @@ import { apiOptions } from './config.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/news';
 
-async function fetchNews() {
+export async function fetchNews() {
     try {
         const response = await fetch(url, apiOptions);
         const data = await response.json();
@@ -31,7 +31,5 @@ function formatNewsItem(item) {
         </div>
     `;
 }
-
-export { fetchNews };
 
 fetchNews();
