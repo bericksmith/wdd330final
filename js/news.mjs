@@ -21,7 +21,6 @@ async function fetchNews() {
 }
 
 function formatNewsItem(item) {
-    const categories = Array.isArray(item.categories) ? item.categories : [];
     return `
         <div class="news-item">
             <h2>${item.headline}</h2>
@@ -29,13 +28,6 @@ function formatNewsItem(item) {
             <a href="${item.link}" target="_blank">Read more</a>
             <p><strong>Published:</strong> ${new Date(item.published || '').toLocaleString()}</p>
             <p><strong>Last Modified:</strong> ${new Date(item.lastModified || '').toLocaleString()}</p>
-
-            <div>
-                <h3>Categories:</h3>
-                <ul>
-                    ${categories.map(cat => `<li>${cat.description} (${cat.type})</li>`).join('')}
-                </ul>
-            </div>
         </div>
     `;
 }
