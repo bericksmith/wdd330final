@@ -46,5 +46,4 @@ async function fetchScores() {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", fetchScores);
