@@ -18,10 +18,8 @@ async function fetchTeamsAndDisplay() {
         display.innerHTML = ''; // Clear previous content
 
         data.sports[0].leagues[0].teams.forEach(team => {
-            const teamHTML = formatTeam(team.team);
-            const teamElement = document.createElement('div');
-            teamElement.innerHTML = teamHTML;
-            display.appendChild(teamElement.firstChild);
+            const teamElement = formatTeam(team.team);
+            display.appendChild(teamElement); // Append the element directly
         });
 
     } catch (error) {
@@ -30,16 +28,18 @@ async function fetchTeamsAndDisplay() {
     }
 }
 
+
 function formatTeam(team) {
     const teamElement = document.createElement('div');
     teamElement.className = 'team';
     teamElement.innerHTML = `
-        <img src="${team.logos[0].href}" alt="${team.displayName}-${team.shortDisplayName}" style="width:40px;height:40px;">
+        <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" style="width:40px;height:40px;">
     `;
     // Attach an event listener to fetch and display details
     teamElement.onclick = () => displayTeamInfo(team.id);
 
-    return teamElement;
+    return teamElement; // Return the entire element
 }
+
 
 fetchTeamsAndDisplay();
