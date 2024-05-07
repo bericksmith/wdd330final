@@ -1,4 +1,4 @@
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/boxscore/401472105';
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=2020&month=10&day=05';
 const options = {
 	method: 'GET',
 	headers: {
