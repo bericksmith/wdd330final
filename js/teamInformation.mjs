@@ -50,11 +50,12 @@ function formatTeamDetails(data) {
                 <div>
                     <h3>Home Field - <i>${team.franchise.venue.fullName}</i></h3>
                     <img src="${team.franchise.venue.images[0].href}" alt="Venue Image" style="width:300px; height:180px;">
+                    <p>Location: ${team.franchise.venue.address.city}, ${team.franchise.venue.address.state}</p>
                 </div>
                 <div>
                     <h3>Next Game - ${nextEventDate}</h3>
                     <p>${team.nextEvent[0].name}</p>
-                    <p>${team.links[5].href}</p>
+                    <p><a href="${team.links[5].href}" target="_blank">Get Tickets!</a></p>
                 </div>
             </div>
         </div>
