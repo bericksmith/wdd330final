@@ -36,10 +36,10 @@ function formatTeam(team) {
     teamElement.innerHTML = `
         <img src="${team.logos[0].href}" alt="${team.displayName}-${team.shortDisplayName}" style="width:40px;height:40px;">
     `;
+    // Attach an event listener to fetch and display details
+    teamElement.onclick = () => displayTeamInfo(team.id);
 
-    teamElement.onclick = () => displayTeamInfo(team);
-
-    return teamElement.outerHTML;
+    return teamElement;
 }
 
 fetchTeamsAndDisplay();
