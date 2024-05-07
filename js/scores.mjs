@@ -15,15 +15,17 @@ async function fetchScores() {
 
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
-                if (event.competitors && event.competitors.length >= 2) {
+                if (event.competitions && event.competitions.length > 0 && event.competitions[0].competitors.length >= 2) {
+                    const competitors = event.competitions[0].competitors;
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
                         <h2>${event.name} - ${event.status.detail}</h2>
-                        <p>${event.competitors[0].team.displayName} (${event.competitors[0].team.abbreviation}): ${event.competitors[0].score}</p>
-                        <p>${event.competitors[1].team.displayName} (${event.competitors[1].team.abbreviation}): ${event.competitors[1].score}</p>
+                        <p>${competitors[0].team.displayName} (${competitors[0].team.abbreviation}): ${competitors[0].score}</p>
+                        <p>${competitors[1].team.displayName} (${competitors[1].team.abbreviation}): ${competitors[1].score}</p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
+                    // Handle cases where competitors data might be missing or incomplete
                     console.warn('Competitors data is missing or incomplete for:', event);
                 }
             });
@@ -36,4 +38,5 @@ async function fetchScores() {
     }
 }
 
+// Load scores when the document is ready
 document.addEventListener("DOMContentLoaded", fetchScores);
