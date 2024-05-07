@@ -21,7 +21,7 @@ a.external-link {
     transition: background-color 0.3s;
 }
 .team:hover, .team.active  {
-    background-color: #bababa;
+    background-color: #c5c5c5;
 }
 
 .team-info {
