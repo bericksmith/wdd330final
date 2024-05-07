@@ -29,7 +29,7 @@ async function fetchScores() {
                     const gameElement = document.createElement('div');
                     gameElement.classList.add('game-element');
                     gameElement.innerHTML = `
-                        <h2>${event.shortName} - ${statusDetail}</h2>
+                        <p><strong>${statusDetail}</strong></p>
                         <div class="score-line">
                             <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
