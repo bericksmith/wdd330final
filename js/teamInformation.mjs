@@ -54,6 +54,7 @@ function formatTeamDetails(data) {
                 <div>
                     <h3>Next Game - ${nextEventDate}</h3>
                     <p>${team.nextEvent[0].name}</p>
+                    <p>${team.links[5].href}</p>
                 </div>
             </div>
         </div>

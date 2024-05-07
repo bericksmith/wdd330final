@@ -1,0 +1,2082 @@
+{
+    "team": {
+        "id": "12",
+        "uid": "s:1~l:10~t:12",
+        "slug": "seattle-mariners",
+        "location": "Seattle",
+        "name": "Mariners",
+        "abbreviation": "SEA",
+        "displayName": "Seattle Mariners",
+        "shortDisplayName": "Mariners",
+        "color": "005c5c",
+        "alternateColor": "0c2c56",
+        "isActive": true,
+        "logos": [
+            {
+                "href": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "default"
+                ],
+                "lastUpdated": "2023-08-15T19:16Z"
+            },
+            {
+                "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/sea.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "dark"
+                ],
+                "lastUpdated": "2023-08-15T19:16Z"
+            },
+            {
+                "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sea.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "scoreboard"
+                ],
+                "lastUpdated": "2023-08-15T19:16Z"
+            },
+            {
+                "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/sea.png",
+                "width": 500,
+                "height": 500,
+                "alt": "",
+                "rel": [
+                    "full",
+                    "scoreboard",
+                    "dark"
+                ],
+                "lastUpdated": "2023-08-15T19:15Z"
+            }
+        ],
+        "record": {
+            "items": [
+                {
+                    "description": "Overall Record",
+                    "type": "total",
+                    "summary": "19-16",
+                    "stats": [
+                        {
+                            "name": "OTLosses",
+                            "value": 1
+                        },
+                        {
+                            "name": "OTWins",
+                            "value": 2
+                        },
+                        {
+                            "name": "avgPointsAgainst",
+                            "value": 3.2571428
+                        },
+                        {
+                            "name": "avgPointsFor",
+                            "value": 3.5714285
+                        },
+                        {
+                            "name": "differential",
+                            "value": 0.30000000000000027
+                        },
+                        {
+                            "name": "divisionWinPercent",
+                            "value": 0.6666667
+                        },
+                        {
+                            "name": "gamesBehind",
+                            "value": 0
+                        },
+                        {
+                            "name": "gamesPlayed",
+                            "value": 35
+                        },
+                        {
+                            "name": "leagueWinPercent",
+                            "value": 0.47058824
+                        },
+                        {
+                            "name": "losses",
+                            "value": 16
+                        },
+                        {
+                            "name": "playoffSeed",
+                            "value": 7
+                        },
+                        {
+                            "name": "pointDifferential",
+                            "value": 11
+                        },
+                        {
+                            "name": "points",
+                            "value": 1.5
+                        },
+                        {
+                            "name": "pointsAgainst",
+                            "value": 114
+                        },
+                        {
+                            "name": "pointsFor",
+                            "value": 125
+                        },
+                        {
+                            "name": "streak",
+                            "value": -1
+                        },
+                        {
+                            "name": "ties",
+                            "value": 0
+                        },
+                        {
+                            "name": "winPercent",
+                            "value": 0.54285717
+                        },
+                        {
+                            "name": "wins",
+                            "value": 19
+                        },
+                        {
+                            "name": "divisionGamesBehind",
+                            "value": 0.5
+                        },
+                        {
+                            "name": "divisionPercent",
+                            "value": 46.29999923706055
+                        },
+                        {
+                            "name": "divisionTied",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeLosses",
+                            "value": 8
+                        },
+                        {
+                            "name": "homeTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeWins",
+                            "value": 11
+                        },
+                        {
+                            "name": "magicNumberDivision",
+                            "value": 128
+                        },
+                        {
+                            "name": "magicNumberWildcard",
+                            "value": 130
+                        },
+                        {
+                            "name": "playoffPercent",
+                            "value": 62.29999923706055
+                        },
+                        {
+                            "name": "roadLosses",
+                            "value": 8
+                        },
+                        {
+                            "name": "roadTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadWins",
+                            "value": 8
+                        },
+                        {
+                            "name": "wildCardPercent",
+                            "value": 16
+                        }
+                    ]
+                },
+                {
+                    "description": "Home Record",
+                    "type": "home",
+                    "summary": "11-8",
+                    "stats": [
+                        {
+                            "name": "OTLosses",
+                            "value": 0
+                        },
+                        {
+                            "name": "OTWins",
+                            "value": 1
+                        },
+                        {
+                            "name": "avgPointsAgainst",
+                            "value": 3.0526316
+                        },
+                        {
+                            "name": "avgPointsFor",
+                            "value": 3.1052632
+                        },
+                        {
+                            "name": "differential",
+                            "value": 0
+                        },
+                        {
+                            "name": "divisionWinPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "gamesBehind",
+                            "value": 0
+                        },
+                        {
+                            "name": "gamesPlayed",
+                            "value": 19
+                        },
+                        {
+                            "name": "leagueWinPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "losses",
+                            "value": 8
+                        },
+                        {
+                            "name": "playoffSeed",
+                            "value": 0
+                        },
+                        {
+                            "name": "pointDifferential",
+                            "value": 1
+                        },
+                        {
+                            "name": "points",
+                            "value": 1.5
+                        },
+                        {
+                            "name": "pointsAgainst",
+                            "value": 58
+                        },
+                        {
+                            "name": "pointsFor",
+                            "value": 59
+                        },
+                        {
+                            "name": "streak",
+                            "value": 0
+                        },
+                        {
+                            "name": "ties",
+                            "value": 0
+                        },
+                        {
+                            "name": "winPercent",
+                            "value": 0.57894737
+                        },
+                        {
+                            "name": "wins",
+                            "value": 11
+                        },
+                        {
+                            "name": "divisionGamesBehind",
+                            "value": 0
+                        },
+                        {
+                            "name": "divisionPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "divisionTied",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeLosses",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeWins",
+                            "value": 0
+                        },
+                        {
+                            "name": "magicNumberDivision",
+                            "value": 0
+                        },
+                        {
+                            "name": "magicNumberWildcard",
+                            "value": 0
+                        },
+                        {
+                            "name": "playoffPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadLosses",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadWins",
+                            "value": 0
+                        },
+                        {
+                            "name": "wildCardPercent",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "description": "Away Record",
+                    "type": "road",
+                    "summary": "8-8",
+                    "stats": [
+                        {
+                            "name": "OTLosses",
+                            "value": 1
+                        },
+                        {
+                            "name": "OTWins",
+                            "value": 1
+                        },
+                        {
+                            "name": "avgPointsAgainst",
+                            "value": 3.5
+                        },
+                        {
+                            "name": "avgPointsFor",
+                            "value": 4.125
+                        },
+                        {
+                            "name": "differential",
+                            "value": 0.5999999999999996
+                        },
+                        {
+                            "name": "divisionWinPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "gamesBehind",
+                            "value": 0
+                        },
+                        {
+                            "name": "gamesPlayed",
+                            "value": 16
+                        },
+                        {
+                            "name": "leagueWinPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "losses",
+                            "value": 8
+                        },
+                        {
+                            "name": "playoffSeed",
+                            "value": 0
+                        },
+                        {
+                            "name": "pointDifferential",
+                            "value": 10
+                        },
+                        {
+                            "name": "points",
+                            "value": 0
+                        },
+                        {
+                            "name": "pointsAgainst",
+                            "value": 56
+                        },
+                        {
+                            "name": "pointsFor",
+                            "value": 66
+                        },
+                        {
+                            "name": "streak",
+                            "value": 0
+                        },
+                        {
+                            "name": "ties",
+                            "value": 0
+                        },
+                        {
+                            "name": "winPercent",
+                            "value": 0.5
+                        },
+                        {
+                            "name": "wins",
+                            "value": 8
+                        },
+                        {
+                            "name": "divisionGamesBehind",
+                            "value": 0
+                        },
+                        {
+                            "name": "divisionPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "divisionTied",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeLosses",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "homeWins",
+                            "value": 0
+                        },
+                        {
+                            "name": "magicNumberDivision",
+                            "value": 0
+                        },
+                        {
+                            "name": "magicNumberWildcard",
+                            "value": 0
+                        },
+                        {
+                            "name": "playoffPercent",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadLosses",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadTies",
+                            "value": 0
+                        },
+                        {
+                            "name": "roadWins",
+                            "value": 0
+                        },
+                        {
+                            "name": "wildCardPercent",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "groups": {
+            "id": "3",
+            "parent": {
+                "id": "7"
+            },
+            "isConference": false
+        },
+        "links": [
+            {
+                "language": "en-US",
+                "rel": [
+                    "clubhouse",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/_/name/sea/seattle-mariners",
+                "text": "Clubhouse",
+                "shortText": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "roster",
+                    "desktop",
+                    "team"
+                ],
+                "href": "http://www.espn.com/mlb/team/roster/_/name/sea/seattle-mariners",
+                "text": "Roster",
+                "shortText": "Roster",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "stats",
+                    "desktop",
+                    "team"
+                ],
+                "href": "http://www.espn.com/mlb/team/stats/_/name/sea/seattle-mariners",
+                "text": "Statistics",
+                "shortText": "Statistics",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "schedule",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/schedule/_/name/sea",
+                "text": "Schedule",
+                "shortText": "Schedule",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "photos",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/photos/_/name/sea",
+                "text": "photos",
+                "shortText": "photos",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "tickets",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.vividseats.com/seattle-mariners-tickets--sports-mlb-baseball/performer/771?wsUser=717",
+                "text": "Tickets",
+                "shortText": "Tickets",
+                "isExternal": true,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "transactions",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/transactions/_/name/sea",
+                "text": "Transactions",
+                "shortText": "Transactions",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "injuries",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/injuries/_/name/sea",
+                "text": "Injuries",
+                "shortText": "Injuries",
+                "isExternal": false,
+                "isPremium": false
+            },
+            {
+                "language": "en-US",
+                "rel": [
+                    "depthchart",
+                    "desktop",
+                    "team"
+                ],
+                "href": "https://www.espn.com/mlb/team/depth/_/name/sea",
+                "text": "Depth Chart",
+                "shortText": "Depth Chart",
+                "isExternal": false,
+                "isPremium": false
+            }
+        ],
+        "franchise": {
+            "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/franchises/12?lang=en&region=us",
+            "id": "12",
+            "uid": "s:1~l:10~f:12",
+            "slug": "seattle-mariners",
+            "location": "Seattle",
+            "name": "Mariners",
+            "abbreviation": "SEA",
+            "displayName": "Seattle Mariners",
+            "shortDisplayName": "Mariners",
+            "color": "005c5c",
+            "isActive": true,
+            "venue": {
+                "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/venues/41?lang=en&region=us",
+                "id": "41",
+                "fullName": "T-Mobile Park",
+                "address": {
+                    "city": "Seattle",
+                    "state": "Washington",
+                    "zipCode": "98134"
+                },
+                "grass": true,
+                "indoor": true,
+                "images": [
+                    {
+                        "href": "https://a.espncdn.com/i/venues/mlb/day/41.jpg",
+                        "width": 2000,
+                        "height": 1125,
+                        "alt": "",
+                        "rel": [
+                            "full",
+                            "day"
+                        ]
+                    }
+                ]
+            },
+            "team": {
+                "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/seasons/2024/teams/12?lang=en&region=us"
+            },
+            "awards": {
+                "$ref": "http://sports.core.api.espn.pvt/v2/sports/baseball/leagues/mlb/franchises/12/awards?lang=en&region=us"
+            }
+        },
+        "nextEvent": [
+            {
+                "id": "401569012",
+                "date": "2024-05-07T23:40Z",
+                "name": "Seattle Mariners at Minnesota Twins",
+                "shortName": "SEA @ MIN",
+                "season": {
+                    "year": 2024,
+                    "displayName": "2024"
+                },
+                "seasonType": {
+                    "id": "2",
+                    "type": 2,
+                    "name": "Regular Season",
+                    "abbreviation": "reg"
+                },
+                "week": {
+                    "number": 19,
+                    "text": "Week 19"
+                },
+                "timeValid": true,
+                "competitions": [
+                    {
+                        "id": "401569012",
+                        "date": "2024-05-07T23:40Z",
+                        "attendance": 0,
+                        "type": {
+                            "id": "1",
+                            "text": "Standard",
+                            "abbreviation": "STD",
+                            "slug": "standard",
+                            "type": "standard"
+                        },
+                        "timeValid": true,
+                        "neutralSite": false,
+                        "boxscoreAvailable": false,
+                        "ticketsAvailable": true,
+                        "venue": {
+                            "fullName": "Target Field",
+                            "address": {
+                                "city": "Minneapolis",
+                                "state": "Minnesota",
+                                "zipCode": "55403"
+                            }
+                        },
+                        "competitors": [
+                            {
+                                "id": "9",
+                                "type": "team",
+                                "order": 0,
+                                "homeAway": "home",
+                                "team": {
+                                    "id": "9",
+                                    "location": "Minnesota",
+                                    "abbreviation": "MIN",
+                                    "displayName": "Minnesota Twins",
+                                    "shortDisplayName": "Twins",
+                                    "logos": [
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "default"
+                                            ],
+                                            "lastUpdated": "2023-08-18T20:32Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/min.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "dark"
+                                            ],
+                                            "lastUpdated": "2023-08-15T15:05Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "scoreboard"
+                                            ],
+                                            "lastUpdated": "2023-08-15T15:04Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/min.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "scoreboard",
+                                                "dark"
+                                            ],
+                                            "lastUpdated": "2023-08-15T15:05Z"
+                                        }
+                                    ],
+                                    "links": [
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/_/name/min/minnesota-twins",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "roster",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/mlb/team/roster/_/name/min/minnesota-twins",
+                                            "text": "Roster"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stats",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/mlb/team/stats/_/name/min/minnesota-twins",
+                                            "text": "Statistics"
+                                        },
+                                        {
+                                            "rel": [
+                                                "schedule",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/schedule/_/name/min",
+                                            "text": "Schedule"
+                                        },
+                                        {
+                                            "rel": [
+                                                "photos",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/photos/_/name/min",
+                                            "text": "photos"
+                                        },
+                                        {
+                                            "rel": [
+                                                "tickets",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.vividseats.com/minnesota-twins-tickets--sports-mlb-baseball/performer/554?wsUser=717",
+                                            "text": "Tickets"
+                                        },
+                                        {
+                                            "rel": [
+                                                "transactions",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/transactions/_/name/min",
+                                            "text": "Transactions"
+                                        },
+                                        {
+                                            "rel": [
+                                                "injuries",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/injuries/_/name/min",
+                                            "text": "Injuries"
+                                        },
+                                        {
+                                            "rel": [
+                                                "depthchart",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/depth/_/name/min",
+                                            "text": "Depth Chart"
+                                        }
+                                    ]
+                                },
+                                "probables": [
+                                    {
+                                        "name": "probableStartingPitcher",
+                                        "displayName": "Probable Starting Pitcher",
+                                        "shortDisplayName": "Starter",
+                                        "abbreviation": "SP",
+                                        "playerId": 3107919,
+                                        "athlete": {
+                                            "id": "3107919",
+                                            "lastName": "Ober",
+                                            "displayName": "Bailey Ober",
+                                            "shortName": "B. Ober",
+                                            "links": [
+                                                {
+                                                    "href": "https://www.espn.com/mlb/player/_/id/3107919"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/stats/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/splits/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/gamelog/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/news/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/bio/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/_/id/3107919/bailey-ober"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/batvspitch/_/id/3107919/bailey-ober"
+                                                }
+                                            ],
+                                            "team": {
+                                                "id": "9",
+                                                "name": "Twins"
+                                            }
+                                        },
+                                        "statistics": [
+                                            {
+                                                "name": "pitching",
+                                                "stats": [
+                                                    {
+                                                        "name": "gamesPlayed",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "teamGamesPlayed",
+                                                        "displayValue": "34"
+                                                    },
+                                                    {
+                                                        "name": "saves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "groundBalls",
+                                                        "displayValue": "28"
+                                                    },
+                                                    {
+                                                        "name": "strikeouts",
+                                                        "displayValue": "28"
+                                                    },
+                                                    {
+                                                        "name": "sacFlies",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "losses",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "hits",
+                                                        "displayValue": "26"
+                                                    },
+                                                    {
+                                                        "name": "earnedRuns",
+                                                        "displayValue": "16"
+                                                    },
+                                                    {
+                                                        "name": "battersHit",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "walks",
+                                                        "displayValue": "7"
+                                                    },
+                                                    {
+                                                        "name": "runs",
+                                                        "displayValue": "16"
+                                                    },
+                                                    {
+                                                        "name": "stolenBases",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "caughtStealing",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "sacBunts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "saveOpportunities",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "homeRuns",
+                                                        "displayValue": "4"
+                                                    },
+                                                    {
+                                                        "name": "triples",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "finishes",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "balks",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "intentionalWalks",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "flyBalls",
+                                                        "displayValue": "62"
+                                                    },
+                                                    {
+                                                        "name": "battersFaced",
+                                                        "displayValue": "125"
+                                                    },
+                                                    {
+                                                        "name": "holds",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "doubles",
+                                                        "displayValue": "9"
+                                                    },
+                                                    {
+                                                        "name": "wins",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "completeGames",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "perfectGames",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "wildPitches",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "RBIs",
+                                                        "displayValue": "13"
+                                                    },
+                                                    {
+                                                        "name": "thirdInnings",
+                                                        "displayValue": "95"
+                                                    },
+                                                    {
+                                                        "name": "teamEarnedRuns",
+                                                        "displayValue": "29"
+                                                    },
+                                                    {
+                                                        "name": "shutouts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pickoffAttempts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pitches",
+                                                        "displayValue": "465"
+                                                    },
+                                                    {
+                                                        "name": "runSupport",
+                                                        "displayValue": "24.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherInterference",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pitchesAsStarter",
+                                                        "displayValue": "465"
+                                                    },
+                                                    {
+                                                        "name": "gamesStarted",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "avgGameScore",
+                                                        "displayValue": "53.3"
+                                                    },
+                                                    {
+                                                        "name": "qualityStarts",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "inheritedRunners",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "inheritedRunnersScored",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "playerRating",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "atBats",
+                                                        "displayValue": "117"
+                                                    },
+                                                    {
+                                                        "name": "opponentTotalBases",
+                                                        "displayValue": "51"
+                                                    },
+                                                    {
+                                                        "name": "isQualified",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedSaves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "fullInnings",
+                                                        "displayValue": "31"
+                                                    },
+                                                    {
+                                                        "name": "partInnings",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "blownSaves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "innings",
+                                                        "displayValue": "31.2"
+                                                    },
+                                                    {
+                                                        "name": "ERA",
+                                                        "displayValue": "4.55"
+                                                    },
+                                                    {
+                                                        "name": "WHIP",
+                                                        "displayValue": "1.04"
+                                                    },
+                                                    {
+                                                        "name": "winPct",
+                                                        "displayValue": ".750"
+                                                    },
+                                                    {
+                                                        "name": "caughtStealingPct",
+                                                        "displayValue": "1.0"
+                                                    },
+                                                    {
+                                                        "name": "groundToFlyRatio",
+                                                        "displayValue": "0.5"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerStart",
+                                                        "displayValue": "77.5"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerInning",
+                                                        "displayValue": "14.7"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerPlateAppearance",
+                                                        "displayValue": "3.7"
+                                                    },
+                                                    {
+                                                        "name": "runSupportAvg",
+                                                        "displayValue": "6.8"
+                                                    },
+                                                    {
+                                                        "name": "opponentAvg",
+                                                        "displayValue": ".222"
+                                                    },
+                                                    {
+                                                        "name": "opponentSlugAvg",
+                                                        "displayValue": ".436"
+                                                    },
+                                                    {
+                                                        "name": "opponentOnBasePct",
+                                                        "displayValue": ".264"
+                                                    },
+                                                    {
+                                                        "name": "opponentOPS",
+                                                        "displayValue": ".700"
+                                                    },
+                                                    {
+                                                        "name": "savePct",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "strikeoutsPerNineInnings",
+                                                        "displayValue": "8.0"
+                                                    },
+                                                    {
+                                                        "name": "strikeoutToWalkRatio",
+                                                        "displayValue": "4.0"
+                                                    },
+                                                    {
+                                                        "name": "toughLosses",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "cheapWins",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "saveOpportunitiesPerWin",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "BIPA",
+                                                        "displayValue": "0.247"
+                                                    },
+                                                    {
+                                                        "name": "pitchCount",
+                                                        "displayValue": "465"
+                                                    },
+                                                    {
+                                                        "name": "strikes",
+                                                        "displayValue": "314"
+                                                    },
+                                                    {
+                                                        "name": "strikePitchRatio",
+                                                        "displayValue": "0.7"
+                                                    },
+                                                    {
+                                                        "name": "WARBR",
+                                                        "displayValue": "0.1"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "fielding",
+                                                "stats": [
+                                                    {
+                                                        "name": "gamesPlayed",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "teamGamesPlayed",
+                                                        "displayValue": "34"
+                                                    },
+                                                    {
+                                                        "name": "doublePlays",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "opportunities",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "errors",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "passedBalls",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "assists",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "outfieldAssists",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pickoffs",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "putouts",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "outsOnField",
+                                                        "displayValue": "95"
+                                                    },
+                                                    {
+                                                        "name": "triplePlays",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "ballsInZone",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "extraBases",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "outsMade",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "hits",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "totalBases",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "gamesStarted",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "catcherThirdInningsPlayed",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherCaughtStealing",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "catcherStolenBasesAllowed",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "catcherEarnedRuns",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualified",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedCatcher",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedPitcher",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "successfulChances",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "totalChances",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "fullInningsPlayed",
+                                                        "displayValue": "32"
+                                                    },
+                                                    {
+                                                        "name": "partInningsPlayed",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "fieldingPct",
+                                                        "displayValue": "1.000"
+                                                    },
+                                                    {
+                                                        "name": "rangeFactor",
+                                                        "displayValue": "0.9"
+                                                    },
+                                                    {
+                                                        "name": "zoneRating",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherCaughtStealingPct",
+                                                        "displayValue": "0.000"
+                                                    },
+                                                    {
+                                                        "name": "catcherERA",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "defWARBR",
+                                                        "displayValue": "0.0"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "12",
+                                "type": "team",
+                                "order": 1,
+                                "homeAway": "away",
+                                "team": {
+                                    "id": "12",
+                                    "location": "Seattle",
+                                    "abbreviation": "SEA",
+                                    "displayName": "Seattle Mariners",
+                                    "shortDisplayName": "Mariners",
+                                    "logos": [
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "default"
+                                            ],
+                                            "lastUpdated": "2023-08-15T19:16Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/sea.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "dark"
+                                            ],
+                                            "lastUpdated": "2023-08-15T19:16Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sea.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "scoreboard"
+                                            ],
+                                            "lastUpdated": "2023-08-15T19:16Z"
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/sea.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "scoreboard",
+                                                "dark"
+                                            ],
+                                            "lastUpdated": "2023-08-15T19:15Z"
+                                        }
+                                    ],
+                                    "links": [
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/_/name/sea/seattle-mariners",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "roster",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/mlb/team/roster/_/name/sea/seattle-mariners",
+                                            "text": "Roster"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stats",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/mlb/team/stats/_/name/sea/seattle-mariners",
+                                            "text": "Statistics"
+                                        },
+                                        {
+                                            "rel": [
+                                                "schedule",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/schedule/_/name/sea",
+                                            "text": "Schedule"
+                                        },
+                                        {
+                                            "rel": [
+                                                "photos",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/photos/_/name/sea",
+                                            "text": "photos"
+                                        },
+                                        {
+                                            "rel": [
+                                                "tickets",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.vividseats.com/seattle-mariners-tickets--sports-mlb-baseball/performer/771?wsUser=717",
+                                            "text": "Tickets"
+                                        },
+                                        {
+                                            "rel": [
+                                                "transactions",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/transactions/_/name/sea",
+                                            "text": "Transactions"
+                                        },
+                                        {
+                                            "rel": [
+                                                "injuries",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/injuries/_/name/sea",
+                                            "text": "Injuries"
+                                        },
+                                        {
+                                            "rel": [
+                                                "depthchart",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "https://www.espn.com/mlb/team/depth/_/name/sea",
+                                            "text": "Depth Chart"
+                                        }
+                                    ]
+                                },
+                                "probables": [
+                                    {
+                                        "name": "probableStartingPitcher",
+                                        "displayName": "Probable Starting Pitcher",
+                                        "shortDisplayName": "Starter",
+                                        "abbreviation": "SP",
+                                        "playerId": 4297897,
+                                        "athlete": {
+                                            "id": "4297897",
+                                            "lastName": "Hancock",
+                                            "displayName": "Emerson Hancock",
+                                            "shortName": "E. Hancock",
+                                            "links": [
+                                                {
+                                                    "href": "https://www.espn.com/mlb/player/_/id/4297897"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/stats/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/splits/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/gamelog/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/news/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/bio/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/_/id/4297897/emerson-hancock"
+                                                },
+                                                {
+                                                    "href": "http://www.espn.com/mlb/player/batvspitch/_/id/4297897/emerson-hancock"
+                                                }
+                                            ],
+                                            "team": {
+                                                "id": "12",
+                                                "name": "Mariners"
+                                            }
+                                        },
+                                        "statistics": [
+                                            {
+                                                "name": "pitching",
+                                                "stats": [
+                                                    {
+                                                        "name": "gamesPlayed",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "teamGamesPlayed",
+                                                        "displayValue": "35"
+                                                    },
+                                                    {
+                                                        "name": "saves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "groundBalls",
+                                                        "displayValue": "34"
+                                                    },
+                                                    {
+                                                        "name": "strikeouts",
+                                                        "displayValue": "23"
+                                                    },
+                                                    {
+                                                        "name": "sacFlies",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "losses",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "hits",
+                                                        "displayValue": "30"
+                                                    },
+                                                    {
+                                                        "name": "earnedRuns",
+                                                        "displayValue": "16"
+                                                    },
+                                                    {
+                                                        "name": "battersHit",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "walks",
+                                                        "displayValue": "9"
+                                                    },
+                                                    {
+                                                        "name": "runs",
+                                                        "displayValue": "21"
+                                                    },
+                                                    {
+                                                        "name": "stolenBases",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "caughtStealing",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "sacBunts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "saveOpportunities",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "homeRuns",
+                                                        "displayValue": "5"
+                                                    },
+                                                    {
+                                                        "name": "triples",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "finishes",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "balks",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "intentionalWalks",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "flyBalls",
+                                                        "displayValue": "62"
+                                                    },
+                                                    {
+                                                        "name": "battersFaced",
+                                                        "displayValue": "131"
+                                                    },
+                                                    {
+                                                        "name": "holds",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "doubles",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "wins",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "completeGames",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "perfectGames",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "wildPitches",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "RBIs",
+                                                        "displayValue": "20"
+                                                    },
+                                                    {
+                                                        "name": "thirdInnings",
+                                                        "displayValue": "91"
+                                                    },
+                                                    {
+                                                        "name": "teamEarnedRuns",
+                                                        "displayValue": "23"
+                                                    },
+                                                    {
+                                                        "name": "shutouts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pickoffAttempts",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pitches",
+                                                        "displayValue": "491"
+                                                    },
+                                                    {
+                                                        "name": "runSupport",
+                                                        "displayValue": "28.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherInterference",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pitchesAsStarter",
+                                                        "displayValue": "491"
+                                                    },
+                                                    {
+                                                        "name": "gamesStarted",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "avgGameScore",
+                                                        "displayValue": "47.5"
+                                                    },
+                                                    {
+                                                        "name": "qualityStarts",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "inheritedRunners",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "inheritedRunnersScored",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "playerRating",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "atBats",
+                                                        "displayValue": "117"
+                                                    },
+                                                    {
+                                                        "name": "opponentTotalBases",
+                                                        "displayValue": "51"
+                                                    },
+                                                    {
+                                                        "name": "isQualified",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedSaves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "fullInnings",
+                                                        "displayValue": "30"
+                                                    },
+                                                    {
+                                                        "name": "partInnings",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "blownSaves",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "innings",
+                                                        "displayValue": "30.1"
+                                                    },
+                                                    {
+                                                        "name": "ERA",
+                                                        "displayValue": "4.75"
+                                                    },
+                                                    {
+                                                        "name": "WHIP",
+                                                        "displayValue": "1.29"
+                                                    },
+                                                    {
+                                                        "name": "winPct",
+                                                        "displayValue": ".500"
+                                                    },
+                                                    {
+                                                        "name": "caughtStealingPct",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "groundToFlyRatio",
+                                                        "displayValue": "0.5"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerStart",
+                                                        "displayValue": "81.8"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerInning",
+                                                        "displayValue": "16.2"
+                                                    },
+                                                    {
+                                                        "name": "pitchesPerPlateAppearance",
+                                                        "displayValue": "3.7"
+                                                    },
+                                                    {
+                                                        "name": "runSupportAvg",
+                                                        "displayValue": "8.3"
+                                                    },
+                                                    {
+                                                        "name": "opponentAvg",
+                                                        "displayValue": ".256"
+                                                    },
+                                                    {
+                                                        "name": "opponentSlugAvg",
+                                                        "displayValue": ".436"
+                                                    },
+                                                    {
+                                                        "name": "opponentOnBasePct",
+                                                        "displayValue": ".321"
+                                                    },
+                                                    {
+                                                        "name": "opponentOPS",
+                                                        "displayValue": ".757"
+                                                    },
+                                                    {
+                                                        "name": "savePct",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "strikeoutsPerNineInnings",
+                                                        "displayValue": "6.8"
+                                                    },
+                                                    {
+                                                        "name": "strikeoutToWalkRatio",
+                                                        "displayValue": "2.6"
+                                                    },
+                                                    {
+                                                        "name": "toughLosses",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "cheapWins",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "saveOpportunitiesPerWin",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "BIPA",
+                                                        "displayValue": "0.269"
+                                                    },
+                                                    {
+                                                        "name": "pitchCount",
+                                                        "displayValue": "491"
+                                                    },
+                                                    {
+                                                        "name": "strikes",
+                                                        "displayValue": "321"
+                                                    },
+                                                    {
+                                                        "name": "strikePitchRatio",
+                                                        "displayValue": "0.7"
+                                                    },
+                                                    {
+                                                        "name": "WARBR",
+                                                        "displayValue": "-0.5"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "fielding",
+                                                "stats": [
+                                                    {
+                                                        "name": "gamesPlayed",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "teamGamesPlayed",
+                                                        "displayValue": "35"
+                                                    },
+                                                    {
+                                                        "name": "doublePlays",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "opportunities",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "errors",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "passedBalls",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "assists",
+                                                        "displayValue": "2"
+                                                    },
+                                                    {
+                                                        "name": "outfieldAssists",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "pickoffs",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "putouts",
+                                                        "displayValue": "3"
+                                                    },
+                                                    {
+                                                        "name": "outsOnField",
+                                                        "displayValue": "91"
+                                                    },
+                                                    {
+                                                        "name": "triplePlays",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "ballsInZone",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "extraBases",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "outsMade",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "hits",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "totalBases",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "gamesStarted",
+                                                        "displayValue": "6"
+                                                    },
+                                                    {
+                                                        "name": "catcherThirdInningsPlayed",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherCaughtStealing",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "catcherStolenBasesAllowed",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "catcherEarnedRuns",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualified",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedCatcher",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "isQualifiedPitcher",
+                                                        "displayValue": "0"
+                                                    },
+                                                    {
+                                                        "name": "successfulChances",
+                                                        "displayValue": "5"
+                                                    },
+                                                    {
+                                                        "name": "totalChances",
+                                                        "displayValue": "7"
+                                                    },
+                                                    {
+                                                        "name": "fullInningsPlayed",
+                                                        "displayValue": "30"
+                                                    },
+                                                    {
+                                                        "name": "partInningsPlayed",
+                                                        "displayValue": "1"
+                                                    },
+                                                    {
+                                                        "name": "fieldingPct",
+                                                        "displayValue": "0.714"
+                                                    },
+                                                    {
+                                                        "name": "rangeFactor",
+                                                        "displayValue": "1.5"
+                                                    },
+                                                    {
+                                                        "name": "zoneRating",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "catcherCaughtStealingPct",
+                                                        "displayValue": "0.000"
+                                                    },
+                                                    {
+                                                        "name": "catcherERA",
+                                                        "displayValue": "0.0"
+                                                    },
+                                                    {
+                                                        "name": "defWARBR",
+                                                        "displayValue": "0.0"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "notes": [],
+                        "broadcasts": [],
+                        "tickets": [
+                            {
+                                "id": "4504823",
+                                "summary": "Tickets as low as $5",
+                                "description": "Seattle Mariners at Minnesota Twins",
+                                "maxPrice": 267,
+                                "startingPrice": 5,
+                                "numberAvailable": 1766,
+                                "totalPostings": 369,
+                                "links": [
+                                    {
+                                        "rel": [
+                                            "tickets",
+                                            "desktop",
+                                            "event"
+                                        ],
+                                        "href": "https://www.vividseats.com/minnesota-twins-tickets-target-field-5-7-2024--sports-mlb-baseball/production/4504823?wsUser=717"
+                                    },
+                                    {
+                                        "rel": [
+                                            "tickets",
+                                            "desktop",
+                                            "venue"
+                                        ],
+                                        "href": "https://www.vividseats.com/target-field-tickets/venue/6752?wsUser=717"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": {
+                            "clock": 0,
+                            "displayClock": "0:00",
+                            "period": 1,
+                            "type": {
+                                "id": "1",
+                                "name": "STATUS_SCHEDULED",
+                                "state": "pre",
+                                "completed": false,
+                                "description": "Scheduled",
+                                "detail": "Scheduled",
+                                "shortDetail": "5/7 - 7:40 PM EDT"
+                            },
+                            "halfInning": 0,
+                            "periodPrefix": "Top"
+                        }
+                    }
+                ],
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "summary",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "https://www.espn.com/mlb/game/_/gameId/401569012/mariners-twins",
+                        "text": "Gamecast",
+                        "shortText": "Summary",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "summary",
+                            "sportscenter",
+                            "app",
+                            "event"
+                        ],
+                        "href": "sportscenter://x-callback-url/showGame?sportName=baseball&leagueAbbrev=mlb&gameId=401569012",
+                        "text": "Gamecast",
+                        "shortText": "Summary",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "now",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "https://www.espn.com/mlb/game/_/gameId/401569012",
+                        "text": "Now",
+                        "shortText": "Now",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "preview",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/mlb/preview/_/gameId/401569012",
+                        "text": "Preview",
+                        "shortText": "Preview",
+                        "isExternal": false,
+                        "isPremium": false
+                    }
+                ]
+            }
+        ],
+        "standingSummary": "2nd in AL West"
+    }
+}
