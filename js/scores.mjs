@@ -29,14 +29,14 @@ async function fetchScores() {
                     const gameElement = document.createElement('div');
                     gameElement.classList.add('game-element');
                     gameElement.innerHTML = `
-                        <p><strong>${statusDetail}</strong></p>
+                        <p class="status-detail"><strong>${statusDetail}</strong></p>
                         <div class="score-line">
                             <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
-                            <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
+                            <span class="score-detail"><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
                         <div class="score-line">
                             <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:20px; margin-right: 10px;">
-                            <span><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
+                            <span class="score-detail"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
                     `;
                     scoresContainer.appendChild(gameElement);
@@ -54,5 +54,3 @@ async function fetchScores() {
 }
 
 document.addEventListener("DOMContentLoaded", fetchScores);
-
-
