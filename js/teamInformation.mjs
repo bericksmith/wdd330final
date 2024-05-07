@@ -37,10 +37,10 @@ function formatTeamDetails(data) {
             <div style="flex: 1; margin-right: 20px;">
                 <h2>${team.displayName}</h2>
                 <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" style="width:100px; height:100px;">
-                <p>Team Colors:<p> 
-                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.color};"></span> #${team.color}
-                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.alternateColor};"></span> #${team.alternateColor}
-                <p>Current Record: ${team.record.items[0].summary}</p>
+                <p><strong>Team Colors:</strong><p> 
+                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.color};"></span>
+                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.alternateColor};"></span>
+                <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
                 <div>
                     <h3>Links</h3>
                     ${links.map(link => `<a href="${link.href}" target="_blank">${link.text}</a>`).join('<br>')}

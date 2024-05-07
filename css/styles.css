@@ -1,0 +1,16 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.team-info {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
