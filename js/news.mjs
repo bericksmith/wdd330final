@@ -23,8 +23,7 @@ export async function fetchNews() {
 function formatNewsItem(item) {
     return `
         <div class="news-item">
-            <a href="${item.link}" target="_blank">${item.headline}</a>
-            <p><strong>Published:</strong> ${new Date(item.published || '').toLocaleString()}</p>
+            <a href="${item.link}" target="_blank">${item.headline}</a> <strong><i>${new Date(item.published || '').toLocaleString()}</i></strong> 
         </div>
     `;
 }
