@@ -15,6 +15,10 @@ export async function displayTeamInfo(teamId) {
         const teamInfoDiv = document.getElementById('teamInfo');
         teamInfoDiv.innerHTML = formatTeamDetails(teamData);
 
+        document.querySelectorAll('.team').forEach(el => el.classList.remove('active'));
+        document.querySelector(`.team[data-team-id="${teamId}"]`).classList.add('active');
+
+
     } catch (error) {
         console.error('Failed to fetch team details:', error);
         document.getElementById('teamInfo').textContent = 'Failed to load team details.';
