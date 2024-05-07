@@ -105,6 +105,7 @@ a.external-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-right: #616161;
 }
 
 #scoresContainer div {
