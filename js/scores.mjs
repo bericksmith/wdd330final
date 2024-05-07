@@ -40,8 +40,3 @@ async function fetchScores() {
 
 // Load scores when the document is ready
 document.addEventListener("DOMContentLoaded", fetchScores);
-
-
-
-
-leagues.events.competitions.status.type.shortDetail
