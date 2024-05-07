@@ -37,9 +37,10 @@ function formatTeamDetails(data) {
             <div style="flex: 1; margin-right: 20px;">
                 <h2>${team.displayName}</h2>
                 <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" style="width:100px; height:100px;">
-                <p>Color: <span style="display:inline-block; width:20px; height:20px; background-color:#${team.color};"></span> #${team.color}</p>
-                <p>Alternate Color: <span style="display:inline-block; width:20px; height:20px; background-color:#${team.alternateColor};"></span> #${team.alternateColor}</p>
-                <p>Overall Record: ${team.record.items[0].summary}</p>
+                <p>Team Colors:<p> 
+                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.color};"></span> #${team.color}
+                <span style="display:inline-block; width:20px; height:20px; background-color:#${team.alternateColor};"></span> #${team.alternateColor}
+                <p>Current Record: ${team.record.items[0].summary}</p>
                 <div>
                     <h3>Links</h3>
                     ${links.map(link => `<a href="${link.href}" target="_blank">${link.text}</a>`).join('<br>')}
@@ -47,12 +48,12 @@ function formatTeamDetails(data) {
             </div>
             <div style="flex: 1;">
                 <div>
-                    <h3>Venue</h3>
+                    <h3>Home Field</h3>
                     <p>${team.franchise.venue.fullName}</p>
-                    <img src="${team.franchise.venue.images[0].href}" alt="Venue Image" style="width:200px; height:120px;">
+                    <img src="${team.franchise.venue.images[0].href}" alt="Venue Image" style="width:300px; height:180px;">
                 </div>
                 <div>
-                    <h3>Next Event</h3>
+                    <h3>Next Game</h3>
                     <p>${team.nextEvent[0].name} on ${nextEventDate}</p>
                 </div>
             </div>
