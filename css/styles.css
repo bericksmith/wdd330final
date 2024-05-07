@@ -20,4 +20,16 @@ body, h1, h2, h3, h4, h5, h6 {
     border-top: 2px solid #ccc;
 }
 
+.newsContent {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
 

@@ -1,22 +1,22 @@
 import { displayTeamInfo } from './teamInformation.mjs';
-import { apiOptions } from './config.mjs';  // Importing the API options
+import { apiOptions } from './config.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/team-list';
 
 async function fetchTeamsAndDisplay() {
     try {
-        const response = await fetch(url, apiOptions); // Using imported API options
+        const response = await fetch(url, apiOptions);
         const data = await response.json();
         const display = document.getElementById('teamDisplay');
 
-        display.innerHTML = ''; // Clear previous content
+        display.innerHTML = ''; 
 
         data.sports[0].leagues[0].teams.forEach(team => {
             const teamElement = formatTeam(team.team);
-            display.appendChild(teamElement); // Append the element directly
+            display.appendChild(teamElement);
         });
 
-        // Check for a previously selected team and display it
+        // Check for a previously selected team and display it LocalStorage
         const savedTeamId = localStorage.getItem('selectedTeamId');
         if (savedTeamId) {
             displayTeamInfo(savedTeamId);
