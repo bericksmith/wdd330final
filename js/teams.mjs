@@ -29,8 +29,7 @@ async function fetchTeamsAndDisplay() {
 function formatTeam(team) {
     return `
         <div class="team">
-            <h2>${team.displayName}</h2>
-            <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" style="width:50px;height:50px;">
+            <img src="${team.logos[0].href}" alt="${team.displayName}-${team.shortDisplayName}" style="width:40px;height:40px;">
         </div>
     `;
 }
