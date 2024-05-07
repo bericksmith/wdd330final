@@ -8,9 +8,16 @@ body, h1, h2, h3, h4, h5, h6 {
     margin: 5px;
     display: inline-block;
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
 }
+.team:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
 .team-info {
     margin-top: 20px;
     padding: 10px;
     border-top: 2px solid #ccc;
 }
+
+
