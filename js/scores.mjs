@@ -17,20 +17,25 @@ async function fetchScores() {
         }
         const gameData = await response.json();
         const scoresContainer = document.getElementById("scoresContainer");
-        scoresContainer.innerHTML = '';
+        scoresContainer.innerHTML = ''; // Clear previous content
 
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
                 if (event.competitions && event.competitions.length > 0 && event.competitions[0].competitors.length >= 2) {
                     const competition = event.competitions[0];
                     const competitors = competition.competitors;
+                    const statusDetail = competition.status.shortDetail || 'No Detail Available';
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
-                        <h2>${event.shortName} - ${competition.status.shortDetail || 'No Detail Available'}</h2>
-                        <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:30px;">
-                        <p>${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
-                        <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:30px;">
-                        <p>${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
+                        <h2>${event.shortName} - ${statusDetail}</h2>
+                        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:30px; margin-right: 10px;">
+                            <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:30px; margin-right: 10px;">
+                            <span><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
+                        </div>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
