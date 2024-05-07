@@ -1,4 +1,4 @@
-import { displayTeamInfo } from './teamInfo.mjs';
+import { displayTeamInfo } from './teaminfo.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/team-list';
 const options = {

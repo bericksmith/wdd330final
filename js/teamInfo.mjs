@@ -10,7 +10,7 @@ export async function displayTeamInfo(teamId) {
 
     try {
         const response = await fetch(url, options);
-        const teamData = await response.json(); // Assuming the response is JSON
+        const teamData = await response.json();
 
         const teamInfoDiv = document.getElementById('teamInfo');
         teamInfoDiv.innerHTML = formatTeamDetails(teamData);
