@@ -19,13 +19,12 @@ async function fetchScores() {
                     const competitors = event.competitions[0].competitors;
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
-                        <h2>${event.name} - ${event.status.detail}</h2>
-                        <p>${competitors[0].team.displayName} (${competitors[0].team.abbreviation}): ${competitors[0].score}</p>
-                        <p>${competitors[1].team.displayName} (${competitors[1].team.abbreviation}): ${competitors[1].score}</p>
+                        <h2>${event.shortname}</h2>
+                        <p>${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
+                        <p>${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
-                    // Handle cases where competitors data might be missing or incomplete
                     console.warn('Competitors data is missing or incomplete for:', event);
                 }
             });
