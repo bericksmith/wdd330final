@@ -3,9 +3,9 @@ import { apiOptions } from './config.mjs';
 function buildUrl() {
     const date = new Date();
     const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month.toString().padStart(2, '0')}&day=${day.toString().padStart(2, '0')}`;
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month}&day=${day}`;
 }
 
 async function fetchScores() {
@@ -13,11 +13,12 @@ async function fetchScores() {
     try {
         const response = await fetch(url, apiOptions);
         if (!response.ok) {
-            throw new Error('Failed to fetch scores: ' + response.statusText);
+            throw new Error(`Failed to fetch scores: ${response.statusText}`);
         }
         const gameData = await response.json();
+
         const scoresContainer = document.getElementById("scoresContainer");
-        scoresContainer.innerHTML = ''; // Clear previous content
+        scoresContainer.innerHTML = '';
 
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
@@ -26,13 +27,14 @@ async function fetchScores() {
                     const competitors = competition.competitors;
                     const statusDetail = competition.status.type.shortDetail || 'No Detail Available';
                     const gameElement = document.createElement('div');
+                    gameElement.classList.add('game-element');
                     gameElement.innerHTML = `
-                        <p><strong>${statusDetail}</strong></p>
-                        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <h2>${event.shortName} - ${statusDetail}</h2>
+                        <div class="score-line">
                             <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
-                        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <div class="score-line">
                             <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
@@ -47,8 +49,10 @@ async function fetchScores() {
         }
     } catch (error) {
         console.error(error);
-        document.getElementById('scoresContainer').innerHTML = `<p>Error fetching data: ${error.message}</p>`;
+        document.getElementById('scoresContainer').innerHTML = `<p>Error fetching data: ${error.message}</p>`; 
     }
 }
 
 document.addEventListener("DOMContentLoaded", fetchScores);
+
+
