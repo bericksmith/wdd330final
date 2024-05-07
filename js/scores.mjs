@@ -5,7 +5,7 @@ function buildUrl() {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month}&day=${day}`;
+    return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month.toString().padStart(2, '0')}&day=${day.toString().padStart(2, '0')}`;
 }
 
 async function fetchScores() {
@@ -27,7 +27,7 @@ async function fetchScores() {
                     const statusDetail = competition.status.type.shortDetail || 'No Detail Available';
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
-                        <h2>${statusDetail}</h2>
+                        <h2>${event.shortName} - ${statusDetail}</h2>
                         <div style="display: flex; align-items: center; margin-bottom: 5px;">
                             <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
@@ -52,3 +52,4 @@ async function fetchScores() {
 }
 
 document.addEventListener("DOMContentLoaded", fetchScores);
+
