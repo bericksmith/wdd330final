@@ -19,10 +19,11 @@ async function fetchScores() {
                     const competitors = event.competitions[0].competitors;
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
-                        <h2>${event.shortname}</h2>
-                        <p>${events.competitions.status.shortDetail}</>
-                        <p>${competitors[0].team.logo} ${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
-                        <p>${competitors[1].team.logo} ${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
+                        <h2>${event.shortName} - ${event.competitions[0].status.shortDetail}</h2>
+                        <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:30px;">
+                        <p>${competitors[0].team.displayName} (${competitors[0].team.abbreviation}): ${competitors[0].score}</p>
+                        <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:30px;">
+                        <p>${competitors[1].team.displayName} (${competitors[1].team.abbreviation}): ${competitors[1].score}</p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
