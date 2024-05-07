@@ -42,8 +42,8 @@ function formatTeamDetails(data) {
         <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
         <div>
             <h3>Links</h3>
-            <p><a href="${team.links[1].href}" target="_blank">Team Roster - 2024</a></p>
-            <p><a href="${team.links[2].href}" target="_blank">Team Schedule - 2024</a></p>
+            <p><a href="${team.links[1].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Roster - 2024</a></p>
+            <p><a href="${team.links[2].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Schedule - 2024</a></p>
         </div>
     </div>
     <div class="venue-section">
@@ -55,7 +55,7 @@ function formatTeamDetails(data) {
         <div>
             <h3>Next Game - ${nextEventDate}</h3>
             <p>${team.nextEvent[0].name}</p>
-            <p><a href="${team.links[5].href}" target="_blank">Get Tickets!</a></p>
+            <p><a href="${team.links[5].href}" class="ticketbutton" target="_blank">Get Tickets!</a></p>
         </div>
     </div>
 </div>
