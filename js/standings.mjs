@@ -2,7 +2,7 @@ import { apiOptions } from './config.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/standings?year=2024&group=national';
 
-async function fetchStandings() {
+export async function fetchStandings() {
     try {
         const response = await fetch(url, apiOptions);
         const data = await response.json();
