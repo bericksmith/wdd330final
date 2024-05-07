@@ -16,39 +16,41 @@ async function fetchTeamsAndDisplay() {
             display.appendChild(teamElement);
         });
 
-        // Check for a previously selected team ID in local storage
-        const savedTeamId = localStorage.getItem('selectedTeamId');
-        if (savedTeamId) {
-            const activeTeamElement = document.querySelector(`.team[data-team-id="${savedTeamId}"]`);
-            if (activeTeamElement) {
-                activeTeamElement.classList.add('active');
-                displayTeamInfo(savedTeamId); // Display the team info for the saved ID only if the element exists
-            } else {
-                console.error('No team element matches the saved ID:', savedTeamId);
-                // Optional: Clear the saved ID if no corresponding element is found
-                localStorage.removeItem('selectedTeamId');
-            }
-        }
+        // Set active class based on local storage after rendering all teams
+        setActiveClassFromStorage();
+
     } catch (error) {
         console.error('Failed to fetch teams:', error);
         document.getElementById('teamDisplay').textContent = 'Failed to load teams.';
     }
 }
 
+function setActiveClassFromStorage() {
+    const savedTeamId = localStorage.getItem('selectedTeamId');
+    if (savedTeamId) {
+        const activeTeamElement = document.querySelector(`.team[data-team-id="${savedTeamId}"]`);
+        if (activeTeamElement) {
+            activeTeamElement.classList.add('active');
+            displayTeamInfo(savedTeamId); // Ensure team info is displayed for the active team
+        } else {
+            console.error('No team element matches the saved ID:', savedTeamId);
+        }
+    }
+}
+
 function formatTeam(team) {
     const teamElement = document.createElement('div');
     teamElement.className = 'team';
-    teamElement.setAttribute('data-team-id', team.id);  // Set data attribute
+    teamElement.setAttribute('data-team-id', team.id);
     teamElement.innerHTML = `
         <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" style="width:40px; height:40px;">
     `;
 
     teamElement.onclick = () => {
-        localStorage.setItem('selectedTeamId', team.id);
-        localStorage.setItem('selectedTeamName', team.displayName);
-        // Ensure all teams are not active before setting new active
         document.querySelectorAll('.team').forEach(el => el.classList.remove('active'));
         teamElement.classList.add('active');
+        localStorage.setItem('selectedTeamId', team.id);
+        localStorage.setItem('selectedTeamName', team.displayName);
         displayTeamInfo(team.id);
     };
 
