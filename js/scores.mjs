@@ -20,8 +20,9 @@ async function fetchScores() {
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
                         <h2>${event.shortname}</h2>
-                        <p>${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
-                        <p>${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
+                        <p>${leagues.events.competitions.status.type.shortDetail}</>
+                        <p>${competitors[0].team.logo} ${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
+                        <p>${competitors[1].team.logo} ${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
@@ -39,3 +40,8 @@ async function fetchScores() {
 
 // Load scores when the document is ready
 document.addEventListener("DOMContentLoaded", fetchScores);
+
+
+
+
+leagues.events.competitions.status.type.shortDetail
