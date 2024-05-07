@@ -100,17 +100,27 @@ a.external-link {
     color: rgb(124, 124, 124);
 }
 
-/* Styles for the scores display */
+#scoresContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    border-right: #616161;
+}
+
 #scoresContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-right: #616161;
+
 }
 
-#scoresContainer div {
-    margin: 10px;
+#scoresContainer > div {
+    flex-shrink: 0;
+    white-space: nowrap;
+    align-items: center;
 }
+
 
 #scoresContainer img {
     height: 20px;
