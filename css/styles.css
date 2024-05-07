@@ -26,8 +26,12 @@ body, h1, h2, h3, h4, h5, h6 {
     border-top: 2px solid #ccc;
 }
 
+.news-item {
+    padding: 10px;   
+}
+
 .divider {
-    border-top: 2px solid #000000;
+    border-top: 2px solid #ccc;
 }
 
 .footer {
