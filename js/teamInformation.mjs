@@ -29,7 +29,6 @@ function formatDate(isoString) {
 
 function formatTeamDetails(data) {
     const team = data.team;
-    const links = team.links.filter(link => ['roster', 'stats', 'schedule', 'tickets'].includes(link.rel[1]));
     const nextEventDate = formatDate(team.nextEvent[0].date);
 
     return `
@@ -43,7 +42,9 @@ function formatTeamDetails(data) {
                 <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
                 <div>
                     <h3>Links</h3>
-                    ${links.map(link => `<a href="${link.href}" target="_blank">${link.text}</a>`).join('<br>')}
+                    <p><a href="${team.links[1].href}" target="_blank">Team Roster - 2024</a></p>
+                    <p><a href="${team.links[2].href}" target="_blank">Team Schedule -2024</a></p>
+ 
                 </div>
             </div>
             <div style="flex: 1;">
