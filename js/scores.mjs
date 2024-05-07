@@ -20,7 +20,7 @@ async function fetchScores() {
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
                         <h2>${event.shortname}</h2>
-                        <p>${event.competitions.status.type.shortDetail}</>
+                        <p>${events.competitions.status.shortDetail}</>
                         <p>${competitors[0].team.logo} ${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
                         <p>${competitors[1].team.logo} ${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
                     `;
