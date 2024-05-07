@@ -1,3 +1,5 @@
+import { displayTeamInfo } from './teamInfo.mjs';
+
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/team-list';
 const options = {
     method: 'GET',
@@ -11,14 +13,16 @@ async function fetchTeamsAndDisplay() {
     try {
         const response = await fetch(url, options);
         const data = await response.json();
-
         const display = document.getElementById('teamDisplay');
 
-        let teamsHTML = data.sports[0].leagues[0].teams.map(team => {
-            return formatTeam(team.team);
-        }).join('');
+        display.innerHTML = ''; // Clear previous content
 
-        display.innerHTML = teamsHTML;
+        data.sports[0].leagues[0].teams.forEach(team => {
+            const teamHTML = formatTeam(team.team);
+            const teamElement = document.createElement('div');
+            teamElement.innerHTML = teamHTML;
+            display.appendChild(teamElement.firstChild);
+        });
 
     } catch (error) {
         console.error('Failed to fetch teams:', error);
@@ -27,11 +31,15 @@ async function fetchTeamsAndDisplay() {
 }
 
 function formatTeam(team) {
-    return `
-        <div class="team">
-            <img src="${team.logos[0].href}" alt="${team.displayName}-${team.shortDisplayName}" style="width:40px;height:40px;">
-        </div>
+    const teamElement = document.createElement('div');
+    teamElement.className = 'team';
+    teamElement.innerHTML = `
+        <img src="${team.logos[0].href}" alt="${team.displayName}-${team.shortDisplayName}" style="width:40px;height:40px;">
     `;
+
+    teamElement.onclick = () => displayTeamInfo(team);
+
+    return teamElement.outerHTML;
 }
 
 fetchTeamsAndDisplay();

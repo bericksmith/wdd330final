@@ -7,20 +7,23 @@
     <style>
         .team {
             border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
+            padding: 5px;
+            margin: 5px;
             display: inline-block;
+            cursor: pointer;
         }
-        .team h2 {
-            font-size: 16px;
+        .team-info {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <h1>Major League Baseball Teams</h1>
+    <h1>MLB Teams</h1>
     <div id="teamDisplay"></div>
+    <div id="teamInfo" class="team-info"></div>
 
     <script type="module" src="./js/teams.mjs"></script>
-
 </body>
 </html>
