@@ -24,16 +24,16 @@ async function fetchScores() {
                 if (event.competitions && event.competitions.length > 0 && event.competitions[0].competitors.length >= 2) {
                     const competition = event.competitions[0];
                     const competitors = competition.competitors;
-                    const statusDetail = competition.status.shortDetail || 'No Detail Available';
+                    const statusDetail = competition.status.type.shortDetail || 'No Detail Available';
                     const gameElement = document.createElement('div');
                     gameElement.innerHTML = `
-                        <h2>${event.shortName} - ${statusDetail}</h2>
+                        <h2>${statusDetail}</h2>
                         <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:30px; margin-right: 10px;">
+                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
                         <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:30px; margin-right: 10px;">
+                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:20px; margin-right: 10px;">
                             <span><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
                     `;
