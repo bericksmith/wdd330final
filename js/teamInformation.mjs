@@ -36,7 +36,7 @@ function formatTeamDetails(data) {
     <div class="team-section">
         <h2>${team.displayName}</h2>
         <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" class="team-img">
-        <p><strong>Team Colors:</strong><p>
+        <p><strong>Team Colors:</strong> 
         <span class="team-colors" style="background-color:#${team.color};"> </span>
         <span class="team-colors" style="background-color:#${team.alternateColor};"> </span>
         <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
