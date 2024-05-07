@@ -28,9 +28,9 @@ async function fetchScores() {
                     gameElement.innerHTML = `
                         <h2>${event.shortName} - ${competition.status.shortDetail || 'No Detail Available'}</h2>
                         <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:30px;">
-                        <p>${competitors[0].team.displayName} (${competitors[0].team.abbreviation}): ${competitors[0].score}</p>
+                        <p>${competitors[0].team.abbreviation}: ${competitors[0].score}</p>
                         <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:30px;">
-                        <p>${competitors[1].team.displayName} (${competitors[1].team.abbreviation}): ${competitors[1].score}</p>
+                        <p>${competitors[1].team.abbreviation}: ${competitors[1].score}</p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
