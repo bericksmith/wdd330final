@@ -23,7 +23,7 @@ export async function displayTeamInfo(teamId) {
 
 function formatDate(isoString) {
     const date = new Date(isoString);
-    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' };
+    const options = { year: 'numeric', month: 'long', day: 'numeric'};
     return date.toLocaleDateString('en-US', options);
 }
 
@@ -48,13 +48,12 @@ function formatTeamDetails(data) {
             </div>
             <div style="flex: 1;">
                 <div>
-                    <h3>Home Field</h3>
-                    <p>${team.franchise.venue.fullName}</p>
+                    <h3>Home Field - <i>${team.franchise.venue.fullName}</i></h3>
                     <img src="${team.franchise.venue.images[0].href}" alt="Venue Image" style="width:300px; height:180px;">
                 </div>
                 <div>
-                    <h3>Next Game</h3>
-                    <p>${team.nextEvent[0].name} on ${nextEventDate}</p>
+                    <h3>Next Game - ${nextEventDate}</h3>
+                    <p>${team.nextEvent[0].name}</p>
                 </div>
             </div>
         </div>
