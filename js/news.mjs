@@ -24,6 +24,7 @@ function formatNewsItem(item) {
     return `
         <div class="news-item">
             <a href="${item.link}" target="_blank">${item.headline}</a> <strong><i>${new Date(item.published || '').toLocaleString()}</i></strong> 
+            <span class="divider"> </span>
         </div>
     `;
 }
