@@ -102,32 +102,13 @@ a.external-link {
 
 #scoresContainer {
     display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
-    padding: 10px;
-    border-right: #616161;
-}
-
-#scoresContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-#scoresContainer > div {
-    flex-shrink: 0;
-    white-space: nowrap;
     align-items: center;
+    white-space: nowrap;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
-
-#scoresContainer img {
-    height: 20px;
-    margin-right: 10px;
-}
-
-#scoresContainer div p {
-    display: inline;
-    margin-right: 30px;
+.game-element {
+    margin-right: 20px;
 }
