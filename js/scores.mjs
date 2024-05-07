@@ -1,15 +1,10 @@
-const url = 'https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=2020&month=10&day=05';
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'b74c0e6687msh81dc7b82824316fp18b727jsn0b2d2b1fa9e0',
-        'X-RapidAPI-Host': 'major-league-baseball-mlb.p.rapidapi.com'
-    }
-};
+import { apiOptions } from './config.mjs';
+
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=2024&month=05&day=07';
 
 async function fetchScores() {
     try {
-        const response = await fetch(url, options);
+        const response = await fetch(url, apiOptions); 
         if (!response.ok) {
             throw new Error('Failed to fetch scores: ' + response.statusText);
         }
