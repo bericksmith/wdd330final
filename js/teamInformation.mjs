@@ -1,4 +1,4 @@
-export async function displayTeamInfo(teamId) {
+async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
     const options = {
         method: 'GET',
@@ -12,9 +12,13 @@ export async function displayTeamInfo(teamId) {
         const response = await fetch(url, options);
         const teamData = await response.json();
 
+        // Update UI
         const teamInfoDiv = document.getElementById('teamInfo');
         teamInfoDiv.innerHTML = formatTeamDetails(teamData);
 
+        // Update active team element
+        document.querySelectorAll('.team').forEach(el => el.classList.remove('active'));
+        document.querySelector(`.team[data-team-id="${teamId}"]`).classList.add('active');
     } catch (error) {
         console.error('Failed to fetch team details:', error);
         document.getElementById('teamInfo').textContent = 'Failed to load team details.';

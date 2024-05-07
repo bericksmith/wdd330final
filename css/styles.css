@@ -20,7 +20,7 @@ a.external-link {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.team:hover {
+.team:hover, .team.active  {
     background-color: #bababa;
 }
 

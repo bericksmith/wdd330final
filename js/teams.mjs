@@ -32,8 +32,15 @@ function formatTeam(team) {
     const teamElement = document.createElement('div');
     teamElement.className = 'team';
     teamElement.innerHTML = `
-        <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" style="width:40px;height:40px;">
+        <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" style="width:40px; height:40px;">
     `;
+
+    // Check if this team's ID is the one stored in local storage and set it as active
+    const storedTeamId = localStorage.getItem('selectedTeamId');
+    if (storedTeamId && storedTeamId === team.id) {
+        teamElement.classList.add('active');
+    }
+
     teamElement.onclick = () => {
         localStorage.setItem('selectedTeamId', team.id);
         localStorage.setItem('selectedTeamName', team.displayName);
