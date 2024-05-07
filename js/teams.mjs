@@ -9,14 +9,13 @@ async function fetchTeamsAndDisplay() {
         const data = await response.json();
         const display = document.getElementById('teamDisplay');
 
-        display.innerHTML = ''; // Clear previous content
+        display.innerHTML = '';
 
         data.sports[0].leagues[0].teams.forEach(team => {
             const teamElement = formatTeam(team.team);
             display.appendChild(teamElement);
         });
 
-        // Set active class based on local storage after rendering all teams
         setActiveClassFromStorage();
 
     } catch (error) {
@@ -31,7 +30,7 @@ function setActiveClassFromStorage() {
         const activeTeamElement = document.querySelector(`.team[data-team-id="${savedTeamId}"]`);
         if (activeTeamElement) {
             activeTeamElement.classList.add('active');
-            displayTeamInfo(savedTeamId); // Ensure team info is displayed for the active team
+            displayTeamInfo(savedTeamId);
         } else {
             console.error('No team element matches the saved ID:', savedTeamId);
         }

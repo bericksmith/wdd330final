@@ -1,15 +1,12 @@
-// Import necessary configurations for API access
 import { apiOptions } from './config.mjs';
 
-// Function to fetch and display information about a specific team
 export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
 
     try {
-        const response = await fetch(url, apiOptions);  // Using shared API options from config
+        const response = await fetch(url, apiOptions);  
         const teamData = await response.json();
 
-        // Update the UI with the fetched team data
         const teamInfoDiv = document.getElementById('teamInfo');
         teamInfoDiv.innerHTML = formatTeamDetails(teamData);
 
@@ -19,14 +16,12 @@ export async function displayTeamInfo(teamId) {
     }
 }
 
-// Helper function to format date
 function formatDate(isoString) {
     const date = new Date(isoString);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
 }
 
-// Function to create HTML content for team details
 function formatTeamDetails(data) {
     const team = data.team;
     const nextEventDate = formatDate(team.nextEvent[0].date);
