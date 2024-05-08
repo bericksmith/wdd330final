@@ -137,12 +137,13 @@ header {
 }
 
 .footer {
+    background-color: #ccc;
     margin-top: 20px;
     padding: 10px;
     border-top: 2px solid var(--border-color);
     border-bottom: 10px solid var(--secondary-color);
     font-size: 10px;
-    color: rgb(124, 124, 124);
+    color: #7c7c7c;
 
 }
 
