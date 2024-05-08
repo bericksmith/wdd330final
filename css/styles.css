@@ -139,6 +139,7 @@ header {
     background-color: var(--secondary-color);
     transform: scale(1.05);
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .ticket-container {
