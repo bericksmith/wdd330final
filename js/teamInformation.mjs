@@ -42,9 +42,13 @@ function formatTeamDetails(data) {
                     <span class="team-colors" style="background-color:#${team.alternateColor};"></span>
                 </p>
                 <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
+                <p><strong>Division Standing:</strong> ${team.standingSummary}</p>
                 <div>
                     <h3>2024</h3>
-                    ${team.links.map(link => `<p><a href="${link.href}" class="external-link" target="_blank" rel="noopener noreferrer">${link.text}</a></p>`).join('')}
+                    <p><a href="${team.links[1].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Roster</a></p>
+                    <p><a href="${team.links[3].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Schedule</a></p>
+                    <p><a href="${team.links[2].href}" class="external-link" target="_blank" rel="noopener noreferrer">Statistics</a></p>
+                    <p><a href="${team.links[7].href}" class="external-link" target="_blank" rel="noopener noreferrer">Injuries</a></p>
                 </div>
             </div>
             <div class="venue-section">
