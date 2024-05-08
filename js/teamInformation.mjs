@@ -13,6 +13,7 @@ export async function displayTeamInfo(teamId) {
         const teamInfoDiv = document.getElementById('teamInfo');
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
+            saveTeamColorsToLocalStorage(teamData.team);
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
         }
@@ -20,6 +21,11 @@ export async function displayTeamInfo(teamId) {
         console.error('Failed to fetch team details:', error);
         document.getElementById('teamInfo').textContent = 'Failed to load team details.';
     }
+}
+
+function saveTeamColorsToLocalStorage(team) {
+    localStorage.setItem('teamColor', team.color);
+    localStorage.setItem('alternateColor', team.alternateColor);
 }
 
 function formatDate(isoString) {
