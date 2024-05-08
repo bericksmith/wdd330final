@@ -10,6 +10,7 @@ a.external-link {
     padding-right: 15px;
     background: url('../images/external.svg') no-repeat right center;
     background-size: 10px 10px;
+    font-size: 12px;
 }
 
 .team {
