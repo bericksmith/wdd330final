@@ -98,8 +98,8 @@ header {
 }
 
 .venue-img {
-    width: 350px;
-    height: 197px;
+    width: 500px;
+    height: 281px;
     border: 3px solid var(--border-color);
     border-radius: 8px;
     animation: fadeIn 5s forwards;
@@ -208,9 +208,8 @@ header {
     }
 
     .venue-img {
-        width: 500px;
-        height: 281px;
-    
+        width: 350px;
+        height: 197px;
     }
 }
 
