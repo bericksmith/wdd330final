@@ -212,11 +212,6 @@ header {
     .flex-container {
         flex-direction: column;
     }
-
-    .venue-img {
-        width: 350px;
-        height: 197px;
-    }
 }
 
 
