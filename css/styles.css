@@ -43,8 +43,7 @@ header {
     text-align: center;
     font-size: 16px;
     height: 70px;
-    border-bottom: 10px solid;
-    border-color: var(--secondary-color);
+    border-bottom: 10px solid var(--secondary-color);
 }
 
 .team {
@@ -64,8 +63,7 @@ header {
 .team-info {
     margin-top: 20px;
     padding: 10px;
-    border-top: 2px solid;
-    border-color: var(--border-color);
+    border-top: 2px solid var(--border-color);
 }
 
 .team-colors {
@@ -82,8 +80,7 @@ header {
 .newsContent {
     margin-top: 20px;
     padding: 10px;
-    border-top: 2px solid;
-    border-color: var(--border-color);
+    border-top: 2px solid var(--border-color);
 }
 
 .news-item {
@@ -92,15 +89,13 @@ header {
 }
 
 .divider {
-    border-top: 2px solid;
-    border-color: var(--border-color);
+    border-top: 2px solid var(--border-color);
 }
 
 .venue-img {
     width: 300px;
     height: 180px;
-    border: 3px solid;
-    border-color: var(--border-color);
+    border: 3px solid var(--border-color);
     border-radius: 8px;
     animation: fadeIn 5s forwards;
 }
@@ -144,10 +139,11 @@ header {
 .footer {
     margin-top: 20px;
     padding: 10px;
-    border-top: 2px solid;
-    border-color: var(--border-color);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 10px solid var(--secondary-color);
     font-size: 10px;
     color: rgb(124, 124, 124);
+
 }
 
 #scoresContainer {
