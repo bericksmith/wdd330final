@@ -97,6 +97,13 @@ header {
     border-top: 2px solid var(--border-color);
 }
 
+.stitchDivider {
+    height: 15px;
+    background-image: url('/images/stiches.png');
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
 .venue-img {
     width: 100%;
     border: 3px solid var(--border-color);
