@@ -70,6 +70,10 @@ header {
     padding: 10px;
 }
 
+.teamDisplay {
+    padding-bottom: 10px;
+}
+
 .team-colors {
     display:inline-block; 
     width:20px; 
