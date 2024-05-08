@@ -55,7 +55,7 @@ function formatTeamDetails(data) {
                 <div>
                     <h3><i>${team.franchise.venue.fullName}</i></h3>
                     <img src="${team.franchise.venue.images[0].href}" alt="Venue Image" class="venue-img">
-                    <p>Location: ${team.franchise.venue.address.city}, ${team.franchise.venue.address.state}</p>
+                    <p><strong>Location:</strong> ${team.franchise.venue.address.city}, ${team.franchise.venue.address.state}</p>
                 </div>
                 <div>
                     <h3>Next Game - ${nextEventDate}</h3>
