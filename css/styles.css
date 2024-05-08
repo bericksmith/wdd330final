@@ -77,7 +77,7 @@ a.external-link {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: margin-right 2s .5s, background-color 0.3s;
 }
 
 .ticketbutton:hover {
