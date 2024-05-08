@@ -8,7 +8,8 @@ function buildUrl() {
     return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month}&day=${day}`;
 }
 
-export async function fetchScores() { // Now this function is exportable
+// Export the fetchScores function so it can be imported in main.js
+export async function fetchScores() {
     const url = buildUrl();
     try {
         const response = await fetch(url, apiOptions);
@@ -19,12 +20,6 @@ export async function fetchScores() { // Now this function is exportable
 
         const scoresContainer = document.getElementById("scoresContainer");
         scoresContainer.innerHTML = '';
-
-        const logo = document.createElement('img');
-        logo.src = "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png";
-        logo.alt = "MLB Logo";
-        logo.style = "width: 85px; height: 85px; display: block; margin: 0 auto; padding-right: 25px";
-        scoresContainer.appendChild(logo);
 
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
@@ -58,6 +53,3 @@ export async function fetchScores() { // Now this function is exportable
         document.getElementById('scoresContainer').innerHTML = `<p>Error fetching data: ${error.message}</p>`; 
     }
 }
-
-document.addEventListener("DOMContentLoaded", fetchScores);
-
