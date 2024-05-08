@@ -45,10 +45,10 @@ function formatTeamDetails(data) {
                 <p><strong>Division Standing:</strong> ${team.standingSummary}</p>
                 <div>
                     <h3>2024</h3>
-                    <p><a href="${team.links[1].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Roster</a></p>
-                    <p><a href="${team.links[3].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Schedule</a></p>
-                    <p><a href="${team.links[2].href}" class="external-link" target="_blank" rel="noopener noreferrer">Statistics</a></p>
-                    <p><a href="${team.links[7].href}" class="external-link" target="_blank" rel="noopener noreferrer">Injuries</a></p>
+                    <p><strong><a href="${team.links[1].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Roster</a></strong></p>
+                    <p><strong><a href="${team.links[3].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Schedule</a></strong></p>
+                    <p><strong><a href="${team.links[2].href}" class="external-link" target="_blank" rel="noopener noreferrer">Statistics</a></strong></p>
+                    <p><strong><a href="${team.links[7].href}" class="external-link" target="_blank" rel="noopener noreferrer">Injuries</a></strong></p>
                 </div>
             </div>
             <div class="venue-section">
