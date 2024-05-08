@@ -23,7 +23,7 @@ export async function fetchScores() {
         const logo = document.createElement('img');
         logo.src = "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png";
         logo.alt = "MLB Logo";
-        logo.style = "width: 85px; height: 85px; display: block; margin: 0 auto 10px auto;";
+        logo.className = 'mlb-logo';
         scoresContainer.appendChild(logo);
 
         if (gameData.events && gameData.events.length > 0) {
@@ -37,12 +37,12 @@ export async function fetchScores() {
                     gameElement.innerHTML = `
                         <p><strong>${statusDetail}</strong></p>
                         <div class="score-line">
-                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" style="height:20px; margin-right: 10px;">
-                            <span><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
+                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" class="score-logo">
+                            <span class="score-details"><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
                         <div class="score-line">
-                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" style="height:20px; margin-right: 10px;">
-                            <span><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
+                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" class="score-logo">
+                            <span class="score-details"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
                     `;
                     scoresContainer.appendChild(gameElement);

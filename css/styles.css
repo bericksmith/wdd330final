@@ -134,5 +134,20 @@ a.external-link {
     white-space: nowrap; 
 }
 
+.mlb-logo {
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin: 20px auto 10px auto;
+}
+
+.score-logo {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.score-details {
+    font-size: 12px;
+}
 
 
