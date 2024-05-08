@@ -137,6 +137,7 @@ header {
 .ticketbutton:hover {
     background-color: var(--secondary-color);
     transform: scale(1.05);
+    border: 1px solid var(--primary-color);
 }
 
 .ticket-container {
