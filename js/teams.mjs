@@ -3,7 +3,7 @@ import { apiOptions } from './config.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/team-list';
 
-async function fetchTeamsAndDisplay() {
+export async function fetchTeamsAndDisplay() {
     try {
         const response = await fetch(url, apiOptions);
         const data = await response.json();
@@ -55,5 +55,3 @@ function formatTeam(team) {
 
     return teamElement;
 }
-
-fetchTeamsAndDisplay();

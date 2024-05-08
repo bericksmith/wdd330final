@@ -28,4 +28,4 @@ function formatNewsItem(item) {
     `;
 }
 
-fetchNews();
+document.addEventListener("DOMContentLoaded", fetchNews);

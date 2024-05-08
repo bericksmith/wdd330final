@@ -4,12 +4,18 @@ export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
 
     try {
-        const response = await fetch(url, apiOptions);  
+        const response = await fetch(url, apiOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch team details: ${response.statusText}`);
+        }
         const teamData = await response.json();
 
         const teamInfoDiv = document.getElementById('teamInfo');
-        teamInfoDiv.innerHTML = formatTeamDetails(teamData);
-
+        if (teamData && teamData.team) {
+            teamInfoDiv.innerHTML = formatTeamDetails(teamData);
+        } else {
+            teamInfoDiv.textContent = 'Team data not found.';
+        }
     } catch (error) {
         console.error('Failed to fetch team details:', error);
         document.getElementById('teamInfo').textContent = 'Failed to load team details.';
@@ -24,7 +30,7 @@ function formatDate(isoString) {
 
 function formatTeamDetails(data) {
     const team = data.team;
-    const nextEventDate = formatDate(team.nextEvent[0].date);
+    const nextEventDate = team.nextEvent && team.nextEvent.length > 0 ? formatDate(team.nextEvent[0].date) : 'No upcoming game';
 
     return `
         <div class="flex-container">
@@ -32,17 +38,13 @@ function formatTeamDetails(data) {
                 <h2>${team.displayName}</h2>
                 <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" class="team-img">
                 <p><strong>Team Colors:</strong>
-                    <span class="team-colors" style="background-color:#${team.color};"> </span>
-                    <span class="team-colors" style="background-color:#${team.alternateColor};"> </span>
+                    <span class="team-colors" style="background-color:#${team.color};"></span>
+                    <span class="team-colors" style="background-color:#${team.alternateColor};"></span>
                 </p>
                 <p><strong>Current Record:</strong> ${team.record.items[0].summary}</p>
-                <p><strong>Division Standing:</strong> ${team.standingSummary}</p>
                 <div>
                     <h3>2024</h3>
-                    <p><a href="${team.links[1].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Roster</a></p>
-                    <p><a href="${team.links[3].href}" class="external-link" target="_blank" rel="noopener noreferrer">Team Schedule</a></p>
-                    <p><a href="${team.links[2].href}" class="external-link" target="_blank" rel="noopener noreferrer">Statistics</a></p>
-                    <p><a href="${team.links[7].href}" class="external-link" target="_blank" rel="noopener noreferrer">Injuries</a></p>
+                    ${team.links.map(link => `<p><a href="${link.href}" class="external-link" target="_blank" rel="noopener noreferrer">${link.text}</a></p>`).join('')}
                 </div>
             </div>
             <div class="venue-section">

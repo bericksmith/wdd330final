@@ -8,7 +8,7 @@ function buildUrl() {
     return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month}&day=${day}`;
 }
 
-async function fetchScores() {
+export async function fetchScores() { // Now this function is exportable
     const url = buildUrl();
     try {
         const response = await fetch(url, apiOptions);
@@ -60,3 +60,4 @@ async function fetchScores() {
 }
 
 document.addEventListener("DOMContentLoaded", fetchScores);
+
