@@ -8,7 +8,6 @@ function buildUrl() {
     return `https://major-league-baseball-mlb.p.rapidapi.com/scoreboard?year=${year}&month=${month}&day=${day}`;
 }
 
-// Export the fetchScores function so it can be imported in main.js
 export async function fetchScores() {
     const url = buildUrl();
     try {
@@ -20,6 +19,12 @@ export async function fetchScores() {
 
         const scoresContainer = document.getElementById("scoresContainer");
         scoresContainer.innerHTML = '';
+
+        const logo = document.createElement('img');
+        logo.src = "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png";
+        logo.alt = "MLB Logo";
+        logo.style = "width: 85px; height: 85px; display: block; margin: 0 auto 10px auto;";
+        scoresContainer.appendChild(logo);
 
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
