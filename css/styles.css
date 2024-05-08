@@ -20,6 +20,7 @@ a.external-link {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .team:hover, .team.active {
     background-color: #c5c5c5;
 }
@@ -102,22 +103,26 @@ a.external-link {
 
 #scoresContainer {
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
-    align-items: center;
-    white-space: nowrap;
     padding: 10px;
-    border: 1px solid #ccc;
+    border-right: #616161;
 }
 
-.game-element {
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 2px solid #ccc;
-    box-sizing: border-box;
+.score-line {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 5px;
 }
 
-.game-element:last-child {
-    border-right: none;
+.score-detail {
+    font-size: 14px; /* Smaller font size for team abbreviation and score */
+    margin-right: 10px; /* Right margin for spacing */
+}
+
+.status-detail {
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased to give more space above the scores */
 }
 
 #scoresContainer img {
@@ -128,14 +133,4 @@ a.external-link {
 #scoresContainer div p {
     display: inline;
     margin-right: 30px;
-}
-
-.score-detail {
-    font-size: 12px;
-    margin-right: 10px;
-}
-
-.status-detail {
-    font-weight: bold;
-    margin-bottom: 5px;
 }
