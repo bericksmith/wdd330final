@@ -105,8 +105,8 @@ a.external-link {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    align-items: center;
     padding: 10px;
-    border-right: #616161;
 }
 
 .score-line {
@@ -116,7 +116,7 @@ a.external-link {
 }
 
 .score-detail {
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 10px;
 }
 
