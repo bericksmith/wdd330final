@@ -130,6 +130,13 @@ header {
     transform: scale(1.05);
 }
 
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .team-section, .venue-section {
     flex: 1;
     margin-right: 20px;
