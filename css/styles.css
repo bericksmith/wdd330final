@@ -68,7 +68,6 @@ header {
 .team-info {
     margin-top: 20px;
     padding: 10px;
-    border-top: 2px solid var(--border-color);
 }
 
 .team-colors {
