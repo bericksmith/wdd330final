@@ -111,18 +111,18 @@ a.external-link {
 
 .score-line {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center; 
     margin-bottom: 5px;
 }
 
 .score-detail {
-    font-size: 14px; /* Smaller font size for team abbreviation and score */
-    margin-right: 10px; /* Right margin for spacing */
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 .status-detail {
     font-weight: bold;
-    margin-bottom: 10px; /* Increased to give more space above the scores */
+    margin-bottom: 10px;
 }
 
 #scoresContainer img {
@@ -133,4 +133,11 @@ a.external-link {
 #scoresContainer div p {
     display: inline;
     margin-right: 30px;
+}
+
+.game-element {
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
