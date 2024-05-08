@@ -14,6 +14,7 @@ export async function displayTeamInfo(teamId) {
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
             saveTeamColorsToLocalStorage(teamData.team);
+            updateCSSVariables(teamData.team);
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
         }
@@ -26,6 +27,11 @@ export async function displayTeamInfo(teamId) {
 function saveTeamColorsToLocalStorage(team) {
     localStorage.setItem('teamColor', team.color);
     localStorage.setItem('alternateColor', team.alternateColor);
+}
+
+function updateCSSVariables(team) {
+    document.documentElement.style.setProperty('--primary-color', `#${team.color}`);
+    document.documentElement.style.setProperty('--secondary-color', `#${team.alternateColor}`);
 }
 
 function formatDate(isoString) {
