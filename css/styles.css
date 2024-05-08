@@ -99,7 +99,7 @@ header {
 
 .stitchDivider {
     height: 15px;
-    background-image: url('/images/stiches.png');
+    background-image: url('/images/stitches.png');
     background-repeat: repeat-x;
     width: 100%;
 }
