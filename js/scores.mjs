@@ -44,7 +44,6 @@ export async function fetchScores() {
                             <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" class="score-logo">
                             <span class="score-details"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
-                        <p><strong><a href="${events.links[0].href}">${events.links[0].text}</a></strong></p>
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
