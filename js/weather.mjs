@@ -34,7 +34,7 @@ function formatWeatherData(data) {
     const current = data.current_observation;
     return `
         <div class="weather-report">
-            <h2>Current Weather in ${location.city}</h2>
+            <h3>Current Weather in ${location.city}</h3>
             <p><strong>Temperature:</strong> ${current.condition.temperature}°F, ${current.condition.text}</p>
             <p><strong>Wind:</strong> ${current.wind.speed} mph ${current.wind.direction}</p>
             <p><strong>Humidity:</strong> ${current.atmosphere.humidity}%</p>
