@@ -14,6 +14,7 @@ export async function displayTeamInfo(teamId) {
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
             saveTeamColorsToLocalStorage(teamData.team);
+            saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
@@ -27,6 +28,15 @@ export async function displayTeamInfo(teamId) {
 function saveTeamColorsToLocalStorage(team) {
     localStorage.setItem('teamColor', team.color);
     localStorage.setItem('alternateColor', team.alternateColor);
+}
+
+function saveTeamLocationToLocalStorage(team) {
+    const location = {
+        city: team.franchise.venue.address.city,
+        state: team.franchise.venue.address.state
+    };
+    const locationString = JSON.stringify(location);
+    localStorage.setItem('teamLocation', locationString);
 }
 
 function updateCSSVariables(team) {

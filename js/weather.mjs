@@ -1,8 +1,9 @@
 import { weatherApiOptions } from './config.mjs';
 
-// Function to fetch current weather data for Boston, Massachusetts
 async function fetchWeather() {
-    const url = 'https://yahoo-weather5.p.rapidapi.com/weather?location=Boston%2C%20Massachusetts&format=json&u=f';
+    const location = localStorage.getItem('teamLocation') || 'Atlanta, Georgia';
+    const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${encodeURIComponent(location)}&format=json&u=f`;
+
     try {
         const response = await fetch(url, weatherApiOptions);
         const weatherData = await response.json();
@@ -22,10 +23,6 @@ function formatWeatherData(data) {
             <p><strong>Temperature:</strong> ${current.condition.temperature}°F, ${current.condition.text}</p>
             <p><strong>Wind:</strong> ${current.wind.speed} mph ${getWindDirection(current.wind.direction)}</p>
             <p><strong>Humidity:</strong> ${current.atmosphere.humidity}%</p>
-            <p><strong>Pressure:</strong> ${current.atmosphere.pressure} mb</p>
-            <p><strong>Visibility:</strong> ${current.atmosphere.visibility} miles</p>
-            <p><strong>Sunrise:</strong> ${current.astronomy.sunrise}</p>
-            <p><strong>Sunset:</strong> ${current.astronomy.sunset}</p>
         </div>
     `;
 }
