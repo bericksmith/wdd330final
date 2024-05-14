@@ -34,18 +34,12 @@ function formatWeatherData(data) {
     const current = data.current_observation;
     return `
         <div class="weather-report">
-            <h2>Current Weather in ${location.city}, ${location.country}</h2>
+            <h2>Current Weather in ${location.city}, ${location.state}</h2>
             <p><strong>Temperature:</strong> ${current.condition.temperature}°F, ${current.condition.text}</p>
-            <p><strong>Wind:</strong> ${current.wind.speed} mph ${getWindDirection(current.wind.direction)}</p>
+            <p><strong>Wind:</strong> ${current.wind.speed} mph</p>
             <p><strong>Humidity:</strong> ${current.atmosphere.humidity}%</p>
         </div>
     `;
-}
-
-function getWindDirection(degree) {
-    const directions = ['North', 'North-East', 'East', 'South-East', 'South', 'South-West', 'West', 'North-West'];
-    const index = Math.round(((degree % 360) / 45)) % 8;
-    return directions[index];
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

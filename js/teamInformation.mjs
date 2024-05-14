@@ -82,6 +82,7 @@ function formatTeamDetails(data) {
                 <div class="ticket-container">
                     <h3>Next Game - ${nextEventDate}</h3>
                     <p>${team.nextEvent[0].name}</p>
+                    <div id="weatherDisplay"></div>
                     <p><a href="${team.links[5].href}" class="ticketbutton" target="_blank">Get ${team.displayName} Tickets!</a></p>
                 </div>
             </div>
