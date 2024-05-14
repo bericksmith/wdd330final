@@ -1,8 +1,22 @@
 import { weatherApiOptions } from './config.mjs';
 
 async function fetchWeather() {
-    const location = localStorage.getItem('teamLocation') || 'Atlanta, Georgia';
-    const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${encodeURIComponent(location)}&format=json&u=f`;
+    const locationData = localStorage.getItem('teamLocation');
+
+    let location = 'Atlanta, Georgia';
+    if (locationData) {
+        try {
+            const parsedLocation = JSON.parse(locationData);
+            if (parsedLocation.city && parsedLocation.state) {
+                location = `${parsedLocation.city}, ${parsedLocation.state}`;
+            }
+        } catch (error) {
+            console.error('Error parsing location data:', error);
+        }
+    }
+
+    const encodedLocation = encodeURIComponent(location);
+    const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${encodedLocation}&format=json&u=f`;
 
     try {
         const response = await fetch(url, weatherApiOptions);
@@ -13,6 +27,7 @@ async function fetchWeather() {
         return `<p>Error fetching weather data: ${error.message}</p>`;
     }
 }
+
 
 function formatWeatherData(data) {
     const location = data.location;
