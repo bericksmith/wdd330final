@@ -1,5 +1,6 @@
 import { weatherApiOptions } from './config.mjs';
 
+// Function to fetch current weather data for Boston, Massachusetts
 async function fetchWeather() {
     const url = 'https://yahoo-weather5.p.rapidapi.com/weather?location=Boston%2C%20Massachusetts&format=json&u=f';
     try {
@@ -34,5 +35,10 @@ function getWindDirection(degree) {
     const index = Math.round(((degree % 360) / 45)) % 8;
     return directions[index];
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const weatherHTML = await fetchWeather();
+    document.getElementById('weatherDisplay').innerHTML = weatherHTML;
+});
 
 export { fetchWeather };

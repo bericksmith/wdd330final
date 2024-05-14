@@ -115,6 +115,15 @@ header {
     animation: fadeIn 5s forwards;
 }
 
+.weather-report {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
