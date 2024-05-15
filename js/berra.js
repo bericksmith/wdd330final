@@ -1,5 +1,5 @@
 function fetchJSONData() {
-    fetch("/json/yogi-berra.json")
+    fetch("./json/yogi-berra.json")
         .then((res) => {
             if (!res.ok) {
                 // Corrected the use of 'new Error'
