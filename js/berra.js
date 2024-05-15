@@ -27,5 +27,5 @@ function displayQuote(quote) {
     }
 }
 
-fetchJSONData();
+fetchBerraJSONData();
 
