@@ -6,10 +6,10 @@ import { fetchWeather } from './weather.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     updateVisitInfo();
-    fetchScores().catch(console.error);
-    fetchNews().catch(console.error);
-    fetchTeamsAndDisplay().catch(console.error);
-    fetchWeather().catch(console.error);
+    fetchScores();
+    fetchNews();
+    fetchTeamsAndDisplay();
+    fetchWeather();
     displayTeamInfo('15'); // Start with braves if no selection
 });
 
