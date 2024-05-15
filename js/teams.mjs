@@ -14,6 +14,9 @@ export async function fetchTeamsAndDisplay() {
         data.sports[0].leagues[0].teams.forEach(team => {
             const teamElement = formatTeam(team.team);
             display.appendChild(teamElement);
+            teamElement.onclick = () => {
+                displayTeamInfo(team.team.id);
+            };
         });
 
         setActiveClassFromStorage();
