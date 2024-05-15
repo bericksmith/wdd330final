@@ -118,6 +118,7 @@ header {
 .weather-report {
     background: #f4f4f4;
     padding: 10px;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
 }
 
