@@ -5,19 +5,14 @@ export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
 
     try {
-        const response = await fetch(url, apiOptions);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch team details: ${response.statusText}`);
-        }
         const teamData = await response.json();
-
         const teamInfoDiv = document.getElementById('teamInfo');
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
             saveTeamColorsToLocalStorage(teamData.team);
-            saveTeamLocationToLocalStorage(teamData.team);
+            await saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
-            fetchWeather();
+            await fetchWeather();
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
         }
@@ -32,13 +27,15 @@ function saveTeamColorsToLocalStorage(team) {
     localStorage.setItem('alternateColor', team.alternateColor);
 }
 
-function saveTeamLocationToLocalStorage(team) {
+async function saveTeamLocationToLocalStorage(team) {
     const location = {
         city: team.franchise.venue.address.city,
         state: team.franchise.venue.address.state
     };
     const locationString = JSON.stringify(location);
     localStorage.setItem('teamLocation', locationString);
+
+    return;
 }
 
 function updateCSSVariables(team) {
