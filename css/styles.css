@@ -125,6 +125,10 @@ header {
     border-radius: 5px;
 }
 
+.yogi-ism {
+    font-weight: bold;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
