@@ -1,4 +1,5 @@
 import { apiOptions } from './config.mjs';
+import { fetchWeather } from './weather.mjs';
 
 export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
@@ -16,6 +17,7 @@ export async function displayTeamInfo(teamId) {
             saveTeamColorsToLocalStorage(teamData.team);
             saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
+            fetchWeather();
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
         }
