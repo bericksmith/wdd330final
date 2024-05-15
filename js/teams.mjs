@@ -1,5 +1,4 @@
 import { displayTeamInfo } from './teamInformation.mjs';
-import { fetchWeather } from './weather.mjs';
 import { apiOptions } from './config.mjs';
 
 const url = 'https://major-league-baseball-mlb.p.rapidapi.com/team-list';
@@ -18,7 +17,6 @@ export async function fetchTeamsAndDisplay() {
         });
 
         setActiveClassFromStorage();
-        fetchWeather();
 
     } catch (error) {
         console.error('Failed to fetch teams:', error);
