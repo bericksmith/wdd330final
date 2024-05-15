@@ -1,24 +1,31 @@
+// teamInformation.mjs
+
 import { apiOptions } from './config.mjs';
-import { fetchWeather } from './weather.mjs';
+import { fetchWeather } from './weather.mjs'; // Import fetchWeather
 
 export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
 
     try {
+        const response = await fetch(url, apiOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch team details: ${response.statusText}`);
+        }
         const teamData = await response.json();
+
         const teamInfoDiv = document.getElementById('teamInfo');
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
             saveTeamColorsToLocalStorage(teamData.team);
             await saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
-            await fetchWeather();
+            await fetchWeather();  // Ensure weather is fetched after updating location
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
         }
     } catch (error) {
         console.error('Failed to fetch team details:', error);
-        document.getElementById('teamInfo').textContent = 'Failed to load team details.';
+        teamInfoDiv.textContent = 'Failed to load team details.';
     }
 }
 
@@ -34,8 +41,6 @@ async function saveTeamLocationToLocalStorage(team) {
     };
     const locationString = JSON.stringify(location);
     localStorage.setItem('teamLocation', locationString);
-
-    return;
 }
 
 function updateCSSVariables(team) {
@@ -49,8 +54,8 @@ function formatDate(isoString) {
     return date.toLocaleDateString('en-US', options);
 }
 
-function formatTeamDetails(data) {
-    const team = data.team;
+function formatTeamDetails(teamData) {
+    const team = teamData.team;
     const nextEventDate = team.nextEvent && team.nextEvent.length > 0 ? formatDate(team.nextEvent[0].date) : 'No upcoming game';
 
     return `
