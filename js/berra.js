@@ -8,7 +8,6 @@ function fetchJSONData() {
         })
         .then((data) => {
             if (data.length > 0) {
-                // Select a random quote from the array
                 const randomQuote = data[Math.floor(Math.random() * data.length)];
                 displayQuote(randomQuote);
             } else {
@@ -20,7 +19,6 @@ function fetchJSONData() {
 }
 
 function displayQuote(quote) {
-    // Assuming there's a div with id="quoteDisplay" in your HTML
     const quoteElement = document.getElementById('quoteDisplay');
     if (quoteElement) {
         quoteElement.innerHTML = `<p>"${quote.text}" - ${quote.author}</p>`;
