@@ -1,4 +1,4 @@
-function fetchJSONData() {
+function fetchBerraJSONData() {
     fetch("./json/yogi-berra.json")
         .then((res) => {
             if (!res.ok) {
