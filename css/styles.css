@@ -238,6 +238,7 @@ header {
 
 .score-details {
     font-size: 10px;
+    white-space: nowrap;
 }
 
 .score {
