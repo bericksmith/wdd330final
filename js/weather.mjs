@@ -1,6 +1,6 @@
 import { weatherApiOptions } from './config.mjs';
 
-async function fetchWeather() {
+export async function fetchWeather() {
     const locationData = localStorage.getItem('teamLocation');
 
     let location = 'Atlanta, Georgia';
