@@ -240,6 +240,10 @@ header {
     font-size: 10px;
 }
 
+.score {
+    font-size: 12px;
+}
+
 /* Responsive adjustments for mobile screens */
 @media (max-width: 600px) {
     .flex-container {

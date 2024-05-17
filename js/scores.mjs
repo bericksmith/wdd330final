@@ -38,11 +38,11 @@ export async function fetchScores() {
                         <p class="score-details"><strong>${statusDetail}</strong></p>
                         <div class="score-line">
                             <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" class="score-logo">
-                            <span class="score-details"><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
+                            <span class="score"><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
                         <div class="score-line">
                             <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" class="score-logo">
-                            <span class="score-details"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
+                            <span class="score"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
                     `;
                     scoresContainer.appendChild(gameElement);
