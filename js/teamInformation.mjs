@@ -6,7 +6,8 @@ export async function displayTeamInfo(teamId) {
     
     // Check if teamId is not provided or invalid
     if (!teamId) {
-        teamInfoDiv.innerHTML = '<h1>Please select a team above</h1>';
+        teamInfoDiv.innerHTML = '<h2>Please select a team above</h2><div id="weatherDisplay"></div>';
+
         return; // Exit the function early
     }
 
