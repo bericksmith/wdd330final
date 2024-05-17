@@ -47,4 +47,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('weatherDisplay').innerHTML = weatherHTML;
 });
 
-export { fetchWeather };
+{ fetchWeather };
