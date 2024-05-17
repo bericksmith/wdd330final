@@ -3,6 +3,7 @@ import { fetchWeather } from './weather.mjs';
 
 export async function displayTeamInfo(teamId) {
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
+    const teamInfoDiv = document.getElementById('teamInfo');
 
     try {
         const response = await fetch(url, apiOptions);
@@ -11,19 +12,22 @@ export async function displayTeamInfo(teamId) {
         }
         const teamData = await response.json();
 
-        const teamInfoDiv = document.getElementById('teamInfo');
         if (teamData && teamData.team) {
             teamInfoDiv.innerHTML = formatTeamDetails(teamData);
             saveTeamColorsToLocalStorage(teamData.team);
             await saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
-            await fetchWeather();
+
+            const weatherHTML = await fetchWeather();
+            document.getElementById('weatherDisplay').innerHTML = weatherHTML;
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
+            document.getElementById('weatherDisplay').textContent = 'Weather data not available.';
         }
     } catch (error) {
         console.error('Failed to fetch team details:', error);
         teamInfoDiv.textContent = 'Failed to load team details.';
+        document.getElementById('weatherDisplay').textContent = 'Failed to load weather.';
     }
 }
 
