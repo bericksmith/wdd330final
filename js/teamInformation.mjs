@@ -2,8 +2,16 @@ import { apiOptions } from './config.mjs';
 import { fetchWeather } from './weather.mjs';
 
 export async function displayTeamInfo(teamId) {
-    const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
     const teamInfoDiv = document.getElementById('teamInfo');
+    
+    // Check if teamId is not provided or invalid
+    if (!teamId) {
+        teamInfoDiv.innerHTML = '<h1>Please select a team above</h1>';
+        document.getElementById('weatherDisplay').innerHTML = ''; // Clear any previous weather data
+        return; // Exit the function early
+    }
+
+    const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
 
     try {
         const response = await fetch(url, apiOptions);
