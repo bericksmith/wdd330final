@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchNews();
     fetchTeamsAndDisplay();
     fetchWeather();
-    displayTeamInfo();
+    displayTeamInfo('15'); // Start with braves if no selection
 });
 
 function updateVisitInfo() {
