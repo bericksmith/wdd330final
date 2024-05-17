@@ -4,11 +4,9 @@ import { fetchWeather } from './weather.mjs';
 export async function displayTeamInfo(teamId) {
     const teamInfoDiv = document.getElementById('teamInfo');
     
-    // Check if teamId is not provided or invalid
     if (!teamId) {
         teamInfoDiv.innerHTML = '<h2>Please select a team above</h2><div id="weatherDisplay"></div>';
-
-        return; // Exit the function early
+        return;
     }
 
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
