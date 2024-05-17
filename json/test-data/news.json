@@ -1,0 +1,878 @@
+[
+    {
+      "description": "Check out the top performers in fantasy MLB on Thursday, including big moments from Clarke Schmidt, Elly De La Cruz and Jarren Duran.",
+      "headline": "Stat Stories: Thursday's standout fantasy MLB performers",
+      "link": "https://www.espn.com/video/clip?id=40164425",
+      "published": "2024-05-17T15:31:34Z",
+      "premium": "",
+      "lastModified": "2024-05-17T15:31:32Z",
+      "categories": [
+        {
+          "id": 12023,
+          "description": "Fantasy MLB",
+          "type": "league",
+          "sportId": 3070,
+          "leagueId": 3070,
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": 194369,
+          "description": "Clarke Schmidt",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": 522003,
+          "description": "Elly De La Cruz",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": 430425,
+          "description": "Anthony Volpe",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": 390499,
+          "description": "Jarren Duran",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:30:02Z"
+        }
+      ]
+    },
+    {
+      "description": "Set your lineups for the week ahead in fantasy baseball with our forecaster preview, which features pitcher rankings, hitter ratings, schedule observations and more.",
+      "headline": "Fantasy Baseball Forecaster: Lineup advice for Week 9",
+      "link": "https://www.espn.com/fantasy/baseball/insider/story/_/id/40163131/fantasy-baseball-forecaster-espn-cockcroft-starting-pitcher-hitter-ranks-week-9-20-26",
+      "published": "2024-05-17T15:18:01Z",
+      "premium": true,
+      "lastModified": "2024-05-17T15:09:03Z",
+      "categories": [
+        {
+          "id": 409228,
+          "description": "fantasy",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": 141870,
+          "description": "news - fantasy",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": 12023,
+          "description": "Fantasy MLB",
+          "type": "league",
+          "sportId": 3070,
+          "leagueId": 3070,
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": 152379,
+          "description": "news - fantasy baseball",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": 129404,
+          "description": "news - mlb",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:42:41Z"
+        }
+      ]
+    },
+    {
+      "description": "Everything you need to know to place your MLB bets and set your fantasy baseball lineups for Friday, May 16.",
+      "headline": "Fantasy baseball pitcher rankings, lineup advice for Friday's MLB games",
+      "link": "https://www.espn.com/fantasy/baseball/story/_/id/40158524/fantasy-baseball-pitcher-rankings-lineup-advice-mlb-espn-daily-notes-friday-16-2024",
+      "published": "2024-05-17T15:32:52Z",
+      "premium": "",
+      "lastModified": "2024-05-17T15:32:50Z",
+      "categories": [
+        {
+          "id": 58918,
+          "description": "Fantasy",
+          "type": "league",
+          "sportId": 2999,
+          "leagueId": 2999,
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 12023,
+          "description": "Fantasy MLB",
+          "type": "league",
+          "sportId": 3070,
+          "leagueId": 3070,
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 141870,
+          "description": "news - fantasy",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 152379,
+          "description": "news - fantasy baseball",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 129404,
+          "description": "news - mlb",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 604955,
+          "description": "Skenes, Paul",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 164442,
+          "description": "Nestor Cortes",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 194321,
+          "description": "Cole Ragans",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 468354,
+          "description": "Hunter Brown",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 448865,
+          "description": "Riley Greene",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 437610,
+          "description": "Kerry Carpenter",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": 448808,
+          "description": "Spencer Torkelson",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T15:17:00Z"
+        }
+      ]
+    },
+    {
+      "description": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
+      "headline": "Fantasy baseball forecaster: Team hitting ratings",
+      "link": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
+      "published": "2024-05-17T12:52:29Z",
+      "premium": "",
+      "lastModified": "2024-05-17T12:52:27Z",
+      "categories": [
+        {
+          "id": 152379,
+          "description": "news - fantasy baseball",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 12023,
+          "description": "Fantasy MLB",
+          "type": "league",
+          "sportId": 3070,
+          "leagueId": 3070,
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 409228,
+          "description": "fantasy",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        }
+      ]
+    },
+    {
+      "description": "Keep up to date on who is pitching -- and how well they're expected to do -- with our forecaster, which provides a rolling 10-day outlook of every team's probable starting pitchers with game score projections.",
+      "headline": "Fantasy baseball forecaster: Pitcher projections for the next 10 days",
+      "link": "https://www.espn.com/fantasy/baseball/story/_/id/31165100/fantasy-baseball-forecaster-probable-starting-pitcher-projections-matchups-daily-weekly-leagues",
+      "published": "2024-05-17T12:52:24Z",
+      "premium": "",
+      "lastModified": "2024-05-17T12:52:22Z",
+      "categories": [
+        {
+          "id": 152379,
+          "description": "news - fantasy baseball",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 12023,
+          "description": "Fantasy MLB",
+          "type": "league",
+          "sportId": 3070,
+          "leagueId": 3070,
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": 409228,
+          "description": "fantasy",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2022-04-16T14:25:14Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T12:52:00Z"
+        }
+      ]
+    },
+    {
+      "description": "The two-time batting champ has long been compared to the late Hall of Famer. Now he's on Mr. Padre's former team.",
+      "headline": "Luis Arráez following in Tony Gwynn's footsteps with Padres",
+      "link": "https://www.espn.com/mlb/story/_/id/40157808/luis-arraez-following-tony-gwynn-san-diego-padres",
+      "published": "2024-05-17T10:52:45Z",
+      "premium": "",
+      "lastModified": "2024-05-17T00:00:43Z",
+      "categories": [
+        {
+          "id": 80311,
+          "description": "MLB",
+          "type": "league",
+          "sportId": 10,
+          "leagueId": 10,
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": 409222,
+          "description": "daily",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": 724,
+          "description": "San Diego Padres",
+          "type": "team",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": 191538,
+          "description": "Arraez, Luis",
+          "type": "athlete",
+          "sportId": 10,
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:21:07Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "topic",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": ""
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:00:00Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:21:07Z"
+        },
+        {
+          "id": "",
+          "description": "",
+          "type": "guid",
+          "sportId": "",
+          "leagueId": "",
+          "createDate": "2024-05-17T11:21:07Z"
+        }
+      ]
+    }
+  ]

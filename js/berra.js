@@ -1,4 +1,4 @@
-function fetchBerraJSONData() {
+export async function fetchBerraJSONData() {
     fetch("./json/yogi-berra.json")
         .then((res) => {
             if (!res.ok) {
