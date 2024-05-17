@@ -57,9 +57,17 @@ function updateCSSVariables(team) {
 }
 
 function formatDate(isoString) {
-    const date = new Date(isoString);
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
+    const eventDate = new Date(isoString);
+    const today = new Date();
+
+    const eventDateString = eventDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    const todayString = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    if (eventDateString === todayString) {
+        return "Today!";
+    } else {
+        return eventDateString;
+    }
 }
 
 function formatTeamDetails(teamData) {
