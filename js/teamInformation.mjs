@@ -7,7 +7,6 @@ export async function displayTeamInfo(teamId) {
     // Check if teamId is not provided or invalid
     if (!teamId) {
         teamInfoDiv.innerHTML = '<h1>Please select a team above</h1>';
-        document.getElementById('weatherDisplay').innerHTML = ''; // Clear any previous weather data
         return; // Exit the function early
     }
 
