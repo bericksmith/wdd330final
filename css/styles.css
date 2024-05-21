@@ -194,6 +194,7 @@ header {
     border-bottom: 10px solid var(--secondary-color);
     font-size: 10px;
     color: #000;
+    min-width: 87px;
 
 }
 
