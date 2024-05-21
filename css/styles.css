@@ -182,13 +182,13 @@ header {
 }
 
 .footer {
-    background-color: #ccc;
+    background-color: #f4f4f4;
     margin-top: 20px;
     padding: 10px;
     border-top: 2px solid var(--border-color);
     border-bottom: 10px solid var(--secondary-color);
     font-size: 10px;
-    color: #f4f4f4;
+    color: #000;
 
 }
 
