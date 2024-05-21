@@ -266,13 +266,18 @@ header {
         flex-direction: column;
     }
 
+    .game-element {
+        min-height: 130px;
+    }
+    
+
     .team-img {
         width: 100%; 
         height: 100%;   
     }
 
     .latestNews {
-        min-height: 355px;
+        min-height: 375px;
     }
 
     .footer {
