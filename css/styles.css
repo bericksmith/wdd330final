@@ -213,6 +213,7 @@ header {
     margin-right: 10px;
     box-sizing: border-box;
     min-width: 110px;
+    min-height: 120px;
 }
 
 
