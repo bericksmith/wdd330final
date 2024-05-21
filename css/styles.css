@@ -270,6 +270,11 @@ header {
     .latestNews {
         min-height: 345px;
     }
+
+    .footer {
+        min-height: 120px;
+    }
 }
+
 
 
