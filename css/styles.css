@@ -139,6 +139,7 @@ header {
 .visits { 
     text-align: right;
     color: #000000;
+    min-height: 12px;
 }
 
 @keyframes fadeIn {
