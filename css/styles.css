@@ -250,6 +250,10 @@ header {
     .flex-container {
         flex-direction: column;
     }
+
+    .team-img {
+        width: 100%;   
+    }
 }
 
 
