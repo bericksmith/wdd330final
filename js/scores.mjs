@@ -37,11 +37,11 @@ export async function fetchScores() {
                     gameElement.innerHTML = `
                         <p class="score-details"><strong>${statusDetail}</strong></p>
                         <div class="score-line">
-                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" class="score-logo">
+                            <img src="${competitors[0].team.logo}" alt="${competitors[0].team.displayName}" class="score-logo" style="height: 20px; width: 20px;">
                             <span class="score"><strong>${competitors[0].team.abbreviation}</strong>: ${competitors[0].score}</span>
                         </div>
                         <div class="score-line">
-                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" class="score-logo">
+                            <img src="${competitors[1].team.logo}" alt="${competitors[1].team.displayName}" class="score-logo" style="height: 20px; width: 20px;">
                             <span class="score"><strong>${competitors[1].team.abbreviation}</strong>: ${competitors[1].score}</span>
                         </div>
                     `;
