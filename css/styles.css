@@ -123,6 +123,10 @@ header {
     animation: fadeIn 5s forwards;
 }
 
+.weatherDisplay {
+    min-height: 170px;
+}
+
 .weather-report {
     background: #f4f4f4;
     padding: 10px 20px;
