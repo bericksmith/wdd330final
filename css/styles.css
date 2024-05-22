@@ -190,8 +190,10 @@ header {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #f4f4f4;
-
     padding: 7px 10px;
     border-top: 2px solid var(--border-color);
     border-bottom: 15px solid var(--secondary-color);
