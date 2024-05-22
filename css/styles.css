@@ -204,7 +204,7 @@ header {
 }
 
 #scoresContainer {
-    min-height: 110px;
+    min-height: 115px;
     max-height: 125px;
     display: flex;
     flex-wrap: nowrap;
