@@ -236,11 +236,6 @@ header {
     margin-bottom: 5px;
 }
 
-.score-line img {
-    height: 20px;
-    margin-right: 10px;
-}
-
 .score-line span {
     white-space: nowrap; 
 }
