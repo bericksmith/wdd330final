@@ -75,6 +75,7 @@ header {
 
 #teamDisplay {
     min-height: 142px;
+    padding-left: 10px;
 }
 
 .team-colors {
@@ -89,14 +90,13 @@ header {
     height: 350px;   
 }
 
-.newsContent {
+#newsContent {
     margin-top: 20px;
     padding: 10px;
-    border-top: 2px solid var(--border-color);
 }
 
 .news-item {
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;   
 }
 
