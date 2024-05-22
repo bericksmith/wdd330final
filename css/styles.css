@@ -197,7 +197,7 @@ header {
     border-bottom: 10px solid var(--secondary-color);
     font-size: 10px;
     color: #000;
-    min-height: 87px;
+    min-height: 80px;
 
 }
 
@@ -276,7 +276,7 @@ header {
     }
 
     .footer {
-        min-height: 120px;
+        min-height: 100px;
     }
 }
 
