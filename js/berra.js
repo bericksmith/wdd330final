@@ -21,7 +21,7 @@ export async function fetchBerraJSONData() {
 function displayQuote(quote) {
     const quoteElement = document.getElementById('quoteDisplay');
     if (quoteElement) {
-        quoteElement.innerHTML = `<p>"${quote.text}" - ${quote.author}</p>`;
+        quoteElement.innerHTML = `"${quote.text}" - ${quote.author}`;
     } else {
         console.error("No element with id 'quoteDisplay' found in HTML.");
     }
