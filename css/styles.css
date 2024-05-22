@@ -204,7 +204,8 @@ header {
 }
 
 #scoresContainer {
-    min-height: 120px;
+    min-height: 110px;
+    max-height: 125px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -264,11 +265,6 @@ header {
     .flex-container {
         flex-direction: column;
     }
-
-    .game-element {
-        min-height: 110px;
-    }
-    
 
     .team-img {
         width: 100%; 
