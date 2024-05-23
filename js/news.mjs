@@ -16,7 +16,7 @@ export async function fetchNews() {
         }
     } catch (error) {
         console.error('Failed to fetch news:', error);
-        document.getElementById('newsContent').textContent = 'Failed to load news.';
+        document.getElementById('newsContent').textContent = 'Failed to load any news items.';
     }
 }
 

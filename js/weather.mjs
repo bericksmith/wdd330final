@@ -23,8 +23,8 @@ export async function fetchWeather() {
         const weatherData = await response.json();
         return formatWeatherData(weatherData);
     } catch (error) {
-        console.error('Failed to fetch weather data:', error);
-        return `<p>Error fetching weather data: ${error.message}</p>`;
+        console.error('Failed to retrieve weather data:', error);
+        return `<p>Error retrieving weather data: ${error.message}</p>`;
     }
 }
 

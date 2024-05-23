@@ -23,7 +23,7 @@ function displayQuote(quote) {
     if (quoteElement) {
         quoteElement.innerHTML = `"${quote.text}" - ${quote.author}`;
     } else {
-        console.error("No element with id 'quoteDisplay' found in HTML.");
+        console.error("No quotes available");
     }
 }
 

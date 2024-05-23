@@ -20,7 +20,7 @@ export async function fetchTeamsAndDisplay() {
 
     } catch (error) {
         console.error('Failed to fetch teams:', error);
-        document.getElementById('teamDisplay').textContent = 'Failed to load teams.';
+        document.getElementById('teamDisplay').textContent = 'Failed to load any teams.';
     }
 }
 

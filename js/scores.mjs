@@ -13,7 +13,7 @@ export async function fetchScores() {
     try {
         const response = await fetch(url, apiOptions);
         if (!response.ok) {
-            throw new Error(`Failed to fetch scores: ${response.statusText}`);
+            throw new Error(`Failed to get scores: ${response.statusText}`);
         }
         const gameData = await response.json();
 
@@ -47,7 +47,7 @@ export async function fetchScores() {
                     `;
                     scoresContainer.appendChild(gameElement);
                 } else {
-                    console.warn('Competitors data is missing or incomplete for:', event);
+                    console.warn('Data is missing or incomplete for:', event);
                 }
             });
         } else {

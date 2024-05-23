@@ -6,6 +6,7 @@ export const apiOptions = {
     }
 };
 
+
 export const weatherApiOptions = {
 	method: 'GET',
 	headers: {

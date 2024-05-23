@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchNews();
     fetchTeamsAndDisplay();
     fetchWeather();
-    displayTeamInfo(); // Start with braves if no selection
+    displayTeamInfo();
     fetchBerraJSONData();
 });
 
