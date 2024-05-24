@@ -42,7 +42,7 @@ function formatTeam(team) {
     teamElement.className = 'team';
     teamElement.setAttribute('data-team-id', team.id);
     teamElement.innerHTML = `
-        <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" style="width:40px; height:40px;">
+        <img src="${team.logos[0].href}" alt="${team.displayName} - ${team.shortDisplayName}" class="selectLogo">
     `;
 
     teamElement.onclick = () => {

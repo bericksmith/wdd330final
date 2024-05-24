@@ -1,5 +1,6 @@
 import { apiOptions } from './config.mjs';
 import { fetchWeather } from './weather.mjs';
+import { fetchBerraJSONData } from './berra.mjs'
 
 export async function displayTeamInfo(teamId) {
     const teamInfoDiv = document.getElementById('teamInfo');
@@ -26,6 +27,9 @@ export async function displayTeamInfo(teamId) {
 
             const weatherHTML = await fetchWeather();
             document.getElementById('weatherDisplay').innerHTML = weatherHTML;
+        
+            const quoteElement = fetchBerraJSONData();
+            document.getElementById('quoteDisplay');            
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
             document.getElementById('weatherDisplay').textContent = 'Weather data not available.';

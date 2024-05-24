@@ -3,7 +3,7 @@ import { fetchScores } from './scores.mjs';
 import { fetchNews } from './news.mjs';
 import { fetchTeamsAndDisplay } from './teams.mjs';
 import { fetchWeather } from './weather.mjs';
-import { fetchBerraJSONData } from './berra.js';
+import { fetchBerraJSONData } from './berra.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     updateVisitInfo();
