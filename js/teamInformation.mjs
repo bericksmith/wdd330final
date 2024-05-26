@@ -28,8 +28,8 @@ export async function displayTeamInfo(teamId) {
             const weatherHTML = await fetchWeather();
             document.getElementById('weatherDisplay').innerHTML = weatherHTML;
         
-            const quoteElement = fetchBerraJSONData();
-            document.getElementById('quoteDisplay');            
+            const quoteElement = await fetchBerraJSONData();
+            document.getElementById('quoteDisplay').innerHTML = quoteElement;           
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
             document.getElementById('weatherDisplay').textContent = 'Weather data not available.';
@@ -76,7 +76,8 @@ function formatDate(isoString) {
 
 function formatTeamDetails(teamData) {
     const team = teamData.team;
-    const nextEventDate = team.nextEvent && team.nextEvent.length > 0 ? formatDate(team.nextEvent[0].date) : 'No upcoming game';
+    const nextEvent = team.nextEvent && team.nextEvent.length > 0 ? team.nextEvent[0] : null;
+    const nextEventDate = nextEvent ? formatDate(nextEvent.date) : 'No upcoming game';
 
     return `
         <div class="flex-container">

@@ -26,6 +26,7 @@ export async function fetchScores() {
         logo.className = 'mlb-logo';
         scoresContainer.appendChild(logo);
 
+        
         if (gameData.events && gameData.events.length > 0) {
             gameData.events.forEach(event => {
                 if (event.competitions && event.competitions.length > 0 && event.competitions[0].competitors.length >= 2) {
