@@ -36,7 +36,7 @@ function markCompleted(event) {
         timestamp.classList.add('timestamp');
         const now = new Date();
         const formattedDateTime = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-        timestamp.textContent = `Completed on: ${formattedDateTime}`;
+        timestamp.textContent = `Done: ${formattedDateTime}`;
         listItem.appendChild(timestamp);
     } else {
         const timestamp = listItem.querySelector('.timestamp');
