@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple To-Do List</title>
     <style>
+        ul {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0;
+        }
         .active-task {
             color: green;
         }
-        .completed-task {
-            color: red;
+        .completed-task .task-text {
             text-decoration: line-through;
+            color: red;
         }
         .timestamp {
             font-size: 0.8em;
             margin-left: 10px;
             color: grey;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task-container {
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
@@ -25,4 +38,6 @@
     <button onclick="addTask()">Add</button>
     <ul id="task-list"></ul>
 
-    <script src="
+    <script src="script.js"></script>
+</body>
+</html>

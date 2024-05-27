@@ -9,10 +9,14 @@ function addTask() {
         const taskList = document.getElementById('task-list');
 
         const listItem = document.createElement('li');
-        listItem.textContent = `${taskCount}. ${taskText}`;
-        listItem.classList.add('active-task');
+        listItem.classList.add('task-item');
         listItem.onclick = markCompleted;
 
+        const taskSpan = document.createElement('span');
+        taskSpan.textContent = `${taskCount}. ${taskText}`;
+        taskSpan.classList.add('task-text', 'active-task');
+
+        listItem.appendChild(taskSpan);
         taskList.appendChild(listItem);
 
         taskInput.value = "";
@@ -20,9 +24,12 @@ function addTask() {
 }
 
 function markCompleted(event) {
-    const listItem = event.target;
+    const listItem = event.currentTarget;
+    const taskSpan = listItem.querySelector('.task-text');
+
     const isCompleted = listItem.classList.toggle('completed-task');
-    listItem.classList.toggle('active-task');
+    taskSpan.classList.toggle('completed-task');
+    taskSpan.classList.toggle('active-task');
 
     if (isCompleted) {
         const timestamp = document.createElement('span');
