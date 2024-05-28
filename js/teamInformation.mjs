@@ -1,6 +1,6 @@
 import { apiOptions } from './config.mjs';
 import { fetchWeather } from './weather.mjs';
-import { fetchBerraJSONData } from './berra.mjs'
+import { fetchBerraJSONData } from './berra.mjs';
 
 export async function displayTeamInfo(teamId) {
     const teamInfoDiv = document.getElementById('teamInfo');
@@ -29,7 +29,7 @@ export async function displayTeamInfo(teamId) {
             document.getElementById('weatherDisplay').innerHTML = weatherHTML;
         
             const quoteElement = await fetchBerraJSONData();
-            document.getElementById('quoteDisplay').innerHTML = quoteElement;           
+            document.getElementById('quoteDisplay').textContent = quoteElement;           
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
             document.getElementById('weatherDisplay').textContent = 'Weather data not available.';
@@ -83,7 +83,16 @@ function formatTeamDetails(teamData) {
         <div class="flex-container">
             <div class="team-section">
                 <h2>${team.displayName}</h2>
-                <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" class="team-img">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="${team.logos[0].href}" alt="${team.shortDisplayName}" class="team-img">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="${team.logos[1].href}" alt="${team.shortDisplayName}" class="team-img">
+                        </div>
+                    </div>
+                </div>
                 <p><strong>Team Colors:</strong>
                     <span class="team-colors" style="background-color:#${team.color};"></span>
                     <span class="team-colors" style="background-color:#${team.alternateColor};"></span>
@@ -106,7 +115,7 @@ function formatTeamDetails(teamData) {
                 </div>
                 <div class="ticket-container">
                     <h3>Next Game - ${nextEventDate}</h3>
-                    <p style="margin: 5px; margin-bottom: 10px;"><i><strong>${team.nextEvent[0].name}</strong></i></p>
+                    <p style="margin: 5px; margin-bottom: 10px;"><i><strong>${nextEvent ? nextEvent.name : 'No upcoming game'}</strong></i></p>
                     <div id="weatherDisplay"></div>
                     <p><a href="${team.links[5].href}" class="ticketbutton" target="_blank">Get ${team.displayName} Tickets!</a></p>
                 </div>
@@ -114,3 +123,4 @@ function formatTeamDetails(teamData) {
         </div>
     `;
 }
+
