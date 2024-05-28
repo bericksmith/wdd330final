@@ -306,7 +306,8 @@ header {
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background-color: #dddddd;
+    background-color: #575757;
+    border: 2px solid #000000;
 }
 
 /* Responsive adjustments for mobile screens */
