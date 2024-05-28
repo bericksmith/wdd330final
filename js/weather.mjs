@@ -34,7 +34,7 @@ function formatWeatherData(data) {
     const current = data.current_observation;
     return `
         <div class="weather-report">
-            <h3>Current Weather in ${location.city}</h3>
+            <p><strong>Current Weather in ${location.city}</strong></p>
             <p><strong>Temperature:</strong> ${current.condition.temperature}°F, ${current.condition.text}</p>
             <p><strong>Wind:</strong> ${current.wind.speed} mph ${current.wind.direction}</p>
             <p><strong>Humidity:</strong> ${current.atmosphere.humidity}%</p>
@@ -46,5 +46,3 @@ document.addEventListener('DOMContentLoaded', async () => {
     const weatherHTML = await fetchWeather();
     document.getElementById('weatherDisplay').innerHTML = weatherHTML;
 });
-
-{ fetchWeather };
