@@ -1,17 +1,20 @@
+// Using modular code structure
 import { apiOptions } from './config.mjs';
 import { fetchWeather } from './weather.mjs';
 import { fetchBerraJSONData } from './berra.mjs';
 
+// DOM Manipulation using conditional rendering
 export async function displayTeamInfo(teamId) {
     const teamInfoDiv = document.getElementById('teamInfo');
-    
+
+    // Handle case where no team is selected
     if (!teamId) {
         teamInfoDiv.innerHTML = '<h2>Please select a team above</h2><div id="weatherDisplay"></div>';
         return;
     }
 
     const url = `https://major-league-baseball-mlb.p.rapidapi.com/team-info/${teamId}`;
-
+// Using Error Handling with Try/Catch
     try {
         const response = await fetch(url, apiOptions);
         if (!response.ok) {
@@ -25,11 +28,13 @@ export async function displayTeamInfo(teamId) {
             await saveTeamLocationToLocalStorage(teamData.team);
             updateCSSVariables(teamData.team);
 
+            // Fetch and display weather data
             const weatherHTML = await fetchWeather();
             document.getElementById('weatherDisplay').innerHTML = weatherHTML;
-        
+
+            // Fetch and display a quote
             const quoteElement = await fetchBerraJSONData();
-            document.getElementById('quoteDisplay').textContent = quoteElement;           
+            document.getElementById('quoteDisplay').textContent = quoteElement;
         } else {
             teamInfoDiv.textContent = 'Team data not found.';
             document.getElementById('weatherDisplay').textContent = 'Weather data not available.';
@@ -41,11 +46,13 @@ export async function displayTeamInfo(teamId) {
     }
 }
 
+// Save team colors to local storage
 function saveTeamColorsToLocalStorage(team) {
     localStorage.setItem('teamColor', team.color);
     localStorage.setItem('alternateColor', team.alternateColor);
 }
 
+// Save team location to local storage
 async function saveTeamLocationToLocalStorage(team) {
     const location = {
         city: team.franchise.venue.address.city,
@@ -55,11 +62,13 @@ async function saveTeamLocationToLocalStorage(team) {
     localStorage.setItem('teamLocation', locationString);
 }
 
+// Update CSS variables with team colors
 function updateCSSVariables(team) {
     document.documentElement.style.setProperty('--primary-color', `#${team.color}`);
     document.documentElement.style.setProperty('--secondary-color', `#${team.alternateColor}`);
 }
 
+// Using a utility function to format dates
 function formatDate(isoString) {
     const eventDate = new Date(isoString);
     const today = new Date();
@@ -74,6 +83,7 @@ function formatDate(isoString) {
     }
 }
 
+// formatting and displaying team details with html output
 function formatTeamDetails(teamData) {
     const team = teamData.team;
     const nextEvent = team.nextEvent && team.nextEvent.length > 0 ? team.nextEvent[0] : null;
@@ -123,4 +133,3 @@ function formatTeamDetails(teamData) {
         </div>
     `;
 }
-
